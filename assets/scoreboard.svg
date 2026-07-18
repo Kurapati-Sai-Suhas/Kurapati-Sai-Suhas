@@ -70,21 +70,21 @@
   <g transform="translate(340, 130)">
     <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
     <text x="75" y="25" text-anchor="middle" class="led-label">100S (PULL REQ)</text>
-    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">404</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">0</text>
   </g>
 
   <!-- Stars (Strike Rate) -->
   <g transform="translate(530, 130)">
     <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
     <text x="75" y="25" text-anchor="middle" class="led-label">S/R (STARS)</text>
-    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">808</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">1</text>
   </g>
 
   <!-- Issues (Wickets) -->
   <g transform="translate(720, 130)">
     <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
     <text x="75" y="25" text-anchor="middle" class="led-label">WKTS (ISSUES)</text>
-    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">200</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">0</text>
   </g>
 
   <!-- Blinking Live Indicator -->

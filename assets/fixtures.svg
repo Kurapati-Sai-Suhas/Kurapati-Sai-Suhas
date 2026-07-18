@@ -53,11 +53,11 @@
       <circle cx="320" cy="80" r="8" fill="#2e7d32" />
       
       <!-- Text -->
-      <text x="20" y="30" class="proj-name">PROJECT-ALPHA</text>
-      <text x="20" y="55" class="proj-desc">A revolutionary new platform.</text>
+      <text x="20" y="30" class="proj-name">SparkLM</text>
+      <text x="20" y="55" class="proj-desc">My AI study Platform...</text>
       
       <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
-      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 124</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 1</text>
     </g>
 
     <!-- Ticket 2 -->
@@ -68,11 +68,11 @@
       <circle cx="320" cy="0" r="8" fill="#2e7d32" />
       <circle cx="320" cy="80" r="8" fill="#2e7d32" />
       
-      <text x="20" y="30" class="proj-name">BETA-TOOLKIT</text>
-      <text x="20" y="55" class="proj-desc">Utilities for everyday dev.</text>
+      <text x="20" y="30" class="proj-name">Kurapati-Sai-Suhas</text>
+      <text x="20" y="55" class="proj-desc">My Interactive Cricket Profile READ...</text>
       
       <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
-      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 89</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 0</text>
     </g>
 
     <!-- Ticket 3 -->
@@ -83,11 +83,11 @@
       <circle cx="320" cy="0" r="8" fill="#2e7d32" />
       <circle cx="320" cy="80" r="8" fill="#2e7d32" />
       
-      <text x="20" y="30" class="proj-name">GAMMA-AI</text>
-      <text x="20" y="55" class="proj-desc">Machine learning models.</text>
+      <text x="20" y="30" class="proj-name">cricvision-ui</text>
+      <text x="20" y="55" class="proj-desc">No description...</text>
       
       <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
-      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 256</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 0</text>
     </g>
 
     <!-- Ticket 4 -->
@@ -98,11 +98,11 @@
       <circle cx="320" cy="0" r="8" fill="#2e7d32" />
       <circle cx="320" cy="80" r="8" fill="#2e7d32" />
       
-      <text x="20" y="30" class="proj-name">DELTA-SERVICE</text>
-      <text x="20" y="55" class="proj-desc">High performance backend.</text>
+      <text x="20" y="30" class="proj-name">sop-quiz-pilot</text>
+      <text x="20" y="55" class="proj-desc">No description...</text>
       
       <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
-      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 42</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 0</text>
     </g>
 
   </g>

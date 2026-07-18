@@ -35,28 +35,28 @@
   <!-- List of Languages -->
   <g transform="translate(80, 80)">
     <!-- Top 1 -->
-    <text x="0" y="15" class="lang-name">JAVASCRIPT</text>
-    <rect x="120" y="2" width="315" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.2s" />
-    <text x="445" y="15" class="lang-pct">45%</text>
+    <text x="0" y="15" class="lang-name">TYPESCRIPT</text>
+    <rect x="120" y="2" width="238" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.2s" />
+    <text x="368" y="15" class="lang-pct">34%</text>
 
     <!-- Top 2 -->
-    <text x="0" y="45" class="lang-name">TYPESCRIPT</text>
-    <rect x="120" y="32" width="175" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.4s" />
-    <text x="305" y="45" class="lang-pct">25%</text>
+    <text x="0" y="45" class="lang-name">PYTHON</text>
+    <rect x="120" y="32" width="224" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.4s" />
+    <text x="354" y="45" class="lang-pct">32%</text>
 
     <!-- Top 3 -->
-    <text x="0" y="75" class="lang-name">PYTHON</text>
-    <rect x="120" y="62" width="105" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.6s" />
-    <text x="235" y="75" class="lang-pct">15%</text>
+    <text x="0" y="75" class="lang-name">JAVASCRIPT</text>
+    <rect x="120" y="62" width="203" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.6s" />
+    <text x="333" y="75" class="lang-pct">29%</text>
 
     <!-- Top 4 -->
-    <text x="0" y="105" class="lang-name">HTML/CSS</text>
-    <rect x="120" y="92" width="70" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.8s" />
-    <text x="200" y="105" class="lang-pct">10%</text>
+    <text x="0" y="105" class="lang-name">CSS</text>
+    <rect x="120" y="92" width="21" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.8s" />
+    <text x="151" y="105" class="lang-pct">3%</text>
 
     <!-- Top 5 -->
-    <text x="0" y="135" class="lang-name">GO</text>
-    <rect x="120" y="122" width="35" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 1.0s" />
-    <text x="165" y="135" class="lang-pct">5%</text>
+    <text x="0" y="135" class="lang-name">HTML</text>
+    <rect x="120" y="122" width="14" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 1.0s" />
+    <text x="144" y="135" class="lang-pct">2%</text>
   </g>
 </svg>
