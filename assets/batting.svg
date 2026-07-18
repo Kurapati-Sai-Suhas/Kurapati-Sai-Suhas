@@ -41,8 +41,8 @@
 
     <!-- Top 2 -->
     <text x="0" y="45" class="lang-name">PYTHON</text>
-    <rect x="120" y="32" width="224" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.4s" />
-    <text x="354" y="45" class="lang-pct">32%</text>
+    <rect x="120" y="32" width="231" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.4s" />
+    <text x="361" y="45" class="lang-pct">33%</text>
 
     <!-- Top 3 -->
     <text x="0" y="75" class="lang-name">JAVASCRIPT</text>
@@ -51,8 +51,8 @@
 
     <!-- Top 4 -->
     <text x="0" y="105" class="lang-name">CSS</text>
-    <rect x="120" y="92" width="21" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.8s" />
-    <text x="151" y="105" class="lang-pct">3%</text>
+    <rect x="120" y="92" width="14" height="16" fill="url(#barGrad)" rx="3" class="anim-bar" style="animation-delay: 0.8s" />
+    <text x="144" y="105" class="lang-pct">2%</text>
 
     <!-- Top 5 -->
     <text x="0" y="135" class="lang-name">HTML</text>

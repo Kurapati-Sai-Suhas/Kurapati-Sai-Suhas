@@ -63,7 +63,7 @@
   <g transform="translate(150, 130)">
     <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
     <text x="75" y="25" text-anchor="middle" class="led-label">RUNS (COMMITS)</text>
-    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">1337</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">104</text>
   </g>
 
   <!-- PRs (Centuries) -->

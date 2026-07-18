@@ -28,8 +28,7 @@ const CONFIG = {
     prs: 404,
     stars: 808,
     issues: 200
-  },
-  visitors: Math.floor(Math.random() * 5000) + 10000 // Dummy visitor count
+  }
 };
 
 // Paths
@@ -49,11 +48,13 @@ async function fetchGitHubData() {
 
   try {
     console.log(`Fetching data for ${GITHUB_USERNAME}...`);
-    // Example query using GitHub GraphQL API to get real stats
     const query = `
       query {
         user(login: "${GITHUB_USERNAME}") {
           name
+          contributionsCollection {
+            totalCommitContributions
+          }
           repositories(first: 100, ownerAffiliations: OWNER, orderBy: {field: STARGAZERS, direction: DESC}) {
             totalCount
             nodes {
@@ -64,6 +65,13 @@ async function fetchGitHubData() {
                 edges {
                   size
                   node {
+                    name
+                  }
+                }
+              }
+              repositoryTopics(first: 5) {
+                nodes {
+                  topic {
                     name
                   }
                 }
@@ -88,30 +96,39 @@ async function fetchGitHubData() {
 
     const user = response.data.data.user;
     if (user.name) CONFIG.name = user.name;
+    
+    // Assign stats
+    CONFIG.stats.commits = user.contributionsCollection.totalCommitContributions || 0;
+    CONFIG.stats.prs = user.pullRequests.totalCount;
+    CONFIG.stats.issues = user.issues.totalCount;
 
-    // Calculate language percentages
     const langSizes = {};
+    const topicCounts = {};
     let totalSize = 0;
     
-    // Get top 4 projects
     const repos = user.repositories.nodes;
     if (repos.length > 0) {
+      CONFIG.stats.stars = repos.reduce((sum, repo) => sum + repo.stargazerCount, 0);
+
       CONFIG.projects = repos.slice(0, 4).map(repo => ({
         name: repo.name.substring(0, 20),
         desc: (repo.description || 'No description').substring(0, 35) + '...',
         stars: repo.stargazerCount
       }));
-      // Pad with dummy if less than 4
       while (CONFIG.projects.length < 4) {
         CONFIG.projects.push({ name: 'Coming Soon', desc: '...', stars: 0 });
       }
 
-      // Aggregate languages
       repos.forEach(repo => {
         if (repo.languages && repo.languages.edges) {
           repo.languages.edges.forEach(edge => {
             langSizes[edge.node.name] = (langSizes[edge.node.name] || 0) + edge.size;
             totalSize += edge.size;
+          });
+        }
+        if (repo.repositoryTopics && repo.repositoryTopics.nodes) {
+          repo.repositoryTopics.nodes.forEach(node => {
+            topicCounts[node.topic.name] = (topicCounts[node.topic.name] || 0) + 1;
           });
         }
       });
@@ -123,18 +140,23 @@ async function fetchGitHubData() {
 
       if (langArray.length > 0) {
         CONFIG.languages = langArray.slice(0, 5);
-        // Pad if needed
         while (CONFIG.languages.length < 5) {
           CONFIG.languages.push({ name: 'N/A', pct: 0 });
         }
+        
+        // Use remaining languages to pad topics if we don't have enough topics
+        const remainingLangs = langArray.slice(5).map(l => l.name);
+        let topTopics = Object.keys(topicCounts).sort((a, b) => topicCounts[b] - topicCounts[a]);
+        
+        let combinedBackend = [...topTopics, ...remainingLangs];
+        if (combinedBackend.length > 0) {
+          CONFIG.backend = combinedBackend.slice(0, 6);
+        }
+        while (CONFIG.backend.length < 6) {
+          CONFIG.backend.push('Dev Tool');
+        }
       }
     }
-
-    // Assign stats
-    CONFIG.stats.prs = user.pullRequests.totalCount;
-    CONFIG.stats.issues = user.issues.totalCount;
-    // Stars total
-    CONFIG.stats.stars = repos.reduce((sum, repo) => sum + repo.stargazerCount, 0);
 
   } catch (error) {
     console.error('Error fetching from GitHub API. Falling back to dummy data.', error.message);
@@ -182,7 +204,7 @@ function processTemplate(templateName) {
   });
 
   // Replace Footer
-  content = content.replace(/{{VISITOR_COUNT}}/g, CONFIG.visitors.toLocaleString());
+  // content = content.replace(/{{VISITOR_COUNT}}/g, CONFIG.visitors.toLocaleString());
 
   const outputPath = path.join(ASSETS_DIR, `${templateName}.svg`);
   fs.writeFileSync(outputPath, content);

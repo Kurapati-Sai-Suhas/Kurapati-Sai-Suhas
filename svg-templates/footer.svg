@@ -45,7 +45,7 @@
   <!-- Bottom Stats / Visitors -->
   <rect x="50" y="80" width="900" height="40" fill="#111" rx="5" />
   
-  <text x="100" y="105" class="bottom-bar">PROFILE VISITORS: <tspan fill="#4caf50">{{VISITOR_COUNT}}</tspan></text>
+  <text x="100" y="105" class="bottom-bar">PROFILE STATUS: <tspan fill="#4caf50">ACTIVE</tspan></text>
   <text x="400" y="105" class="bottom-bar">CURRENT FORM: <tspan fill="#ff9933">EXCELLENT</tspan></text>
   <text x="700" y="105" class="bottom-bar">GOAL: <tspan fill="#fff">WORLD CLASS CODE</tspan></text>
 

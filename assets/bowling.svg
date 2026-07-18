@@ -41,7 +41,7 @@
     <g transform="translate(0, 0)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 0s" />
-      <text x="40" y="15" class="tech-name">NODE.JS</text>
+      <text x="40" y="15" class="tech-name">JAVA</text>
       <text x="40" y="32" class="tech-sub">YORKER (FRAMEWORK)</text>
       <text x="180" y="20" class="speed">150 KPH</text>
     </g>
@@ -50,7 +50,7 @@
     <g transform="translate(300, 0)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 0.5s" />
-      <text x="40" y="15" class="tech-name">POSTGRESQL</text>
+      <text x="40" y="15" class="tech-name">POWERSHELL</text>
       <text x="40" y="32" class="tech-sub">BOUNCER (DATABASE)</text>
       <text x="180" y="20" class="speed">148 KPH</text>
     </g>
@@ -59,7 +59,7 @@
     <g transform="translate(600, 0)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 1.0s" />
-      <text x="40" y="15" class="tech-name">AWS</text>
+      <text x="40" y="15" class="tech-name">SHELL</text>
       <text x="40" y="32" class="tech-sub">GOOGLY (CLOUD)</text>
       <text x="180" y="20" class="speed">145 KPH</text>
     </g>
@@ -68,7 +68,7 @@
     <g transform="translate(0, 70)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 1.5s" />
-      <text x="40" y="15" class="tech-name">DOCKER</text>
+      <text x="40" y="15" class="tech-name">DOCKERFILE</text>
       <text x="40" y="32" class="tech-sub">INSWING (DEVOPS)</text>
       <text x="180" y="20" class="speed">142 KPH</text>
     </g>
@@ -77,7 +77,7 @@
     <g transform="translate(300, 70)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 2.0s" />
-      <text x="40" y="15" class="tech-name">TENSORFLOW</text>
+      <text x="40" y="15" class="tech-name">BATCHFILE</text>
       <text x="40" y="32" class="tech-sub">DOOSRA (AI/ML)</text>
       <text x="180" y="20" class="speed">138 KPH</text>
     </g>
@@ -86,7 +86,7 @@
     <g transform="translate(600, 70)">
       <circle cx="15" cy="15" r="10" fill="url(#ballGlow)" />
       <circle cx="25" cy="15" r="10" fill="url(#ballGlow)" class="anim-ball" style="animation-delay: 2.5s" />
-      <text x="40" y="15" class="tech-name">GIT</text>
+      <text x="40" y="15" class="tech-name">DEV TOOL</text>
       <text x="40" y="32" class="tech-sub">SLOWER BALL (TOOLS)</text>
       <text x="180" y="20" class="speed">115 KPH</text>
     </g>
