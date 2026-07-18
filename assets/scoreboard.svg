@@ -1,0 +1,95 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient for Stadium wall -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020111" />
+      <stop offset="100%" stop-color="#1a1a2e" />
+    </linearGradient>
+
+    <!-- Scoreboard Bezel Gradient -->
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#333" />
+      <stop offset="100%" stop-color="#111" />
+    </linearGradient>
+
+    <!-- LED Glow Filter -->
+    <filter id="ledGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .led-text { font-family: 'Courier New', Courier, monospace; font-weight: bold; fill: #ff9933; filter: url(#ledGlow); }
+      .led-label { font-family: 'Courier New', Courier, monospace; font-weight: bold; fill: #4caf50; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
+      .led-title { font-family: 'Courier New', Courier, monospace; font-weight: 900; fill: #ffffff; font-size: 24px; text-transform: uppercase; letter-spacing: 4px; filter: url(#ledGlow); }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+      .blinking { animation: blink 2s infinite; }
+      
+      /* Grid pattern for the LED screen */
+      .screen-bg { fill: #0a0a0a; }
+    </style>
+
+    <pattern id="grid" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#000" fill-opacity="0.5" />
+      <circle cx="2" cy="2" r="1" fill="#222" />
+    </pattern>
+  </defs>
+
+  <!-- Wall Background -->
+  <rect width="1000" height="300" fill="url(#wallGrad)" />
+
+  <!-- Scoreboard Outer Frame -->
+  <rect x="50" y="20" width="900" height="260" fill="url(#bezelGrad)" rx="15" ry="15" stroke="#444" stroke-width="4" />
+  
+  <!-- Scoreboard Inner Screen -->
+  <rect x="70" y="40" width="860" height="220" class="screen-bg" rx="5" ry="5" />
+  <rect x="70" y="40" width="860" height="220" fill="url(#grid)" rx="5" ry="5" /> <!-- LED dot pattern -->
+
+  <!-- Title -->
+  <text x="500" y="80" text-anchor="middle" class="led-title">MATCH STATISTICS - GITHUB OVERALL</text>
+
+  <!-- Divider Line -->
+  <line x1="100" y1="100" x2="900" y2="100" stroke="#333" stroke-width="2" stroke-dasharray="10, 5" />
+
+  <!-- Stats Grid -->
+  <!-- Commits (Runs) -->
+  <g transform="translate(150, 130)">
+    <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
+    <text x="75" y="25" text-anchor="middle" class="led-label">RUNS (COMMITS)</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">1337</text>
+  </g>
+
+  <!-- PRs (Centuries) -->
+  <g transform="translate(340, 130)">
+    <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
+    <text x="75" y="25" text-anchor="middle" class="led-label">100S (PULL REQ)</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">404</text>
+  </g>
+
+  <!-- Stars (Strike Rate) -->
+  <g transform="translate(530, 130)">
+    <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
+    <text x="75" y="25" text-anchor="middle" class="led-label">S/R (STARS)</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">808</text>
+  </g>
+
+  <!-- Issues (Wickets) -->
+  <g transform="translate(720, 130)">
+    <rect x="0" y="0" width="150" height="80" fill="#111" stroke="#333" stroke-width="2" rx="4" />
+    <text x="75" y="25" text-anchor="middle" class="led-label">WKTS (ISSUES)</text>
+    <text x="75" y="65" text-anchor="middle" font-size="36" class="led-text">200</text>
+  </g>
+
+  <!-- Blinking Live Indicator -->
+  <g transform="translate(860, 75)" class="blinking">
+    <circle cx="0" cy="-5" r="5" fill="#f00" filter="url(#ledGlow)" />
+    <text x="15" y="0" font-family="Courier New" font-size="14" font-weight="bold" fill="#f00" filter="url(#ledGlow)">LIVE</text>
+  </g>
+</svg>

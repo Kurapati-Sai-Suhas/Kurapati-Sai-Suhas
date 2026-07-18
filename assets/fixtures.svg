@@ -1,0 +1,109 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ticketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+
+    <linearGradient id="stubGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9933" />
+      <stop offset="100%" stop-color="#cc7a00" />
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="5" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+
+    <style>
+      .title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 24px; fill: #111; letter-spacing: 2px; }
+      .proj-name { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 18px; fill: #000080; text-transform: uppercase; }
+      .proj-desc { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #555; }
+      .proj-stat { font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 14px; fill: #fff; }
+      .ticket-title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 12px; fill: #fff; letter-spacing: 1px; }
+      
+      @keyframes popIn {
+        0% { transform: scale(0.9); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .ticket { transform-origin: center; animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; opacity: 0; }
+    </style>
+  </defs>
+
+  <!-- Background (Pitch Green to match flow) -->
+  <rect width="1000" height="300" fill="#2e7d32" />
+
+  <!-- White border line for pitch marking -->
+  <line x1="50" y1="30" x2="950" y2="30" stroke="#fff" stroke-width="4" />
+  
+  <rect x="300" y="10" width="400" height="40" fill="#fff" rx="20" />
+  <text x="500" y="37" text-anchor="middle" class="title">TOURNAMENT FIXTURES</text>
+
+  <!-- Tickets container -->
+  <g transform="translate(50, 80)">
+    
+    <!-- Ticket 1 -->
+    <g class="ticket" style="animation-delay: 0.2s">
+      <!-- Main body -->
+      <rect x="0" y="0" width="400" height="80" fill="url(#ticketGrad)" rx="8" filter="url(#shadow)" />
+      <!-- Stub -->
+      <rect x="320" y="0" width="80" height="80" fill="url(#stubGrad)" rx="8" />
+      <rect x="315" y="0" width="10" height="80" fill="#2e7d32" stroke-dasharray="4,4" stroke="#fff" /> <!-- Perforation -->
+      <!-- Cutouts -->
+      <circle cx="320" cy="0" r="8" fill="#2e7d32" />
+      <circle cx="320" cy="80" r="8" fill="#2e7d32" />
+      
+      <!-- Text -->
+      <text x="20" y="30" class="proj-name">PROJECT-ALPHA</text>
+      <text x="20" y="55" class="proj-desc">A revolutionary new platform.</text>
+      
+      <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 124</text>
+    </g>
+
+    <!-- Ticket 2 -->
+    <g transform="translate(450, 0)" class="ticket" style="animation-delay: 0.4s">
+      <rect x="0" y="0" width="400" height="80" fill="url(#ticketGrad)" rx="8" filter="url(#shadow)" />
+      <rect x="320" y="0" width="80" height="80" fill="url(#stubGrad)" rx="8" />
+      <rect x="315" y="0" width="10" height="80" fill="#2e7d32" stroke-dasharray="4,4" stroke="#fff" />
+      <circle cx="320" cy="0" r="8" fill="#2e7d32" />
+      <circle cx="320" cy="80" r="8" fill="#2e7d32" />
+      
+      <text x="20" y="30" class="proj-name">BETA-TOOLKIT</text>
+      <text x="20" y="55" class="proj-desc">Utilities for everyday dev.</text>
+      
+      <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 89</text>
+    </g>
+
+    <!-- Ticket 3 -->
+    <g transform="translate(0, 110)" class="ticket" style="animation-delay: 0.6s">
+      <rect x="0" y="0" width="400" height="80" fill="url(#ticketGrad)" rx="8" filter="url(#shadow)" />
+      <rect x="320" y="0" width="80" height="80" fill="url(#stubGrad)" rx="8" />
+      <rect x="315" y="0" width="10" height="80" fill="#2e7d32" stroke-dasharray="4,4" stroke="#fff" />
+      <circle cx="320" cy="0" r="8" fill="#2e7d32" />
+      <circle cx="320" cy="80" r="8" fill="#2e7d32" />
+      
+      <text x="20" y="30" class="proj-name">GAMMA-AI</text>
+      <text x="20" y="55" class="proj-desc">Machine learning models.</text>
+      
+      <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 256</text>
+    </g>
+
+    <!-- Ticket 4 -->
+    <g transform="translate(450, 110)" class="ticket" style="animation-delay: 0.8s">
+      <rect x="0" y="0" width="400" height="80" fill="url(#ticketGrad)" rx="8" filter="url(#shadow)" />
+      <rect x="320" y="0" width="80" height="80" fill="url(#stubGrad)" rx="8" />
+      <rect x="315" y="0" width="10" height="80" fill="#2e7d32" stroke-dasharray="4,4" stroke="#fff" />
+      <circle cx="320" cy="0" r="8" fill="#2e7d32" />
+      <circle cx="320" cy="80" r="8" fill="#2e7d32" />
+      
+      <text x="20" y="30" class="proj-name">DELTA-SERVICE</text>
+      <text x="20" y="55" class="proj-desc">High performance backend.</text>
+      
+      <text x="360" y="30" text-anchor="middle" class="ticket-title">STARS</text>
+      <text x="360" y="55" text-anchor="middle" class="proj-stat">⭐ 42</text>
+    </g>
+
+  </g>
+</svg>

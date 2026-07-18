@@ -1,0 +1,211 @@
+<svg width="1000" height="400" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Night Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020111" />
+      <stop offset="100%" stop-color="#000080" />
+    </linearGradient>
+
+    <!-- Pitch Gradient -->
+    <linearGradient id="pitchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50" />
+      <stop offset="100%" stop-color="#2e7d32" />
+    </linearGradient>
+
+    <!-- Central Pitch (22 yards) -->
+    <linearGradient id="dirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4b886" />
+      <stop offset="100%" stop-color="#b89355" />
+    </linearGradient>
+
+    <!-- Floodlight Glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Star Animation -->
+    <style>
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes flash {
+        0%, 95%, 100% { opacity: 0; }
+        97% { opacity: 1; }
+      }
+      @keyframes batTap {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(2px) rotate(2deg); }
+      }
+      @keyframes floatText {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes ballBowl {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        40% { transform: translate(-100px, 15px) scale(0.8); opacity: 1; }
+        45% { transform: translate(-120px, -5px) scale(1.2); opacity: 1; }
+        90% { transform: translate(-300px, -20px) scale(1.5); opacity: 0; }
+        100% { transform: translate(0, 0) scale(1); opacity: 0; }
+      }
+      .star { animation: twinkle 3s infinite ease-in-out; }
+      .flash { animation: flash 4s infinite; }
+      .bat { animation: batTap 1.5s infinite ease-in-out; transform-origin: 65% 50%; }
+      .title { animation: floatText 4s infinite ease-in-out; }
+      
+      .text-title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 32px; fill: #ffffff; text-transform: uppercase; letter-spacing: 2px; }
+      .text-subtitle { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 16px; fill: #ff9933; letter-spacing: 4px; }
+      .text-name { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 900; font-size: 58px; fill: #0082c4; stroke: #ffffff; stroke-width: 2px; letter-spacing: 1px; }
+    </style>
+
+    <g id="stadium-seats">
+      <ellipse cx="500" cy="200" rx="600" ry="200" fill="#111" />
+      <ellipse cx="500" cy="210" rx="580" ry="190" fill="#0082c4" />
+      <ellipse cx="500" cy="220" rx="560" ry="180" fill="#005b8a" />
+      <ellipse cx="500" cy="230" rx="540" ry="170" fill="#ff9933" />
+      <ellipse cx="500" cy="240" rx="520" ry="160" fill="#111" />
+    </g>
+
+    <g id="floodlight">
+      <rect x="-10" y="0" width="20" height="150" fill="#555" />
+      <rect x="-40" y="-40" width="80" height="40" fill="#222" />
+      <circle cx="-25" cy="-30" r="8" fill="#fff" filter="url(#glow)" />
+      <circle cx="0" cy="-30" r="8" fill="#fff" filter="url(#glow)" />
+      <circle cx="25" cy="-30" r="8" fill="#fff" filter="url(#glow)" />
+      <circle cx="-25" cy="-10" r="8" fill="#fff" filter="url(#glow)" />
+      <circle cx="0" cy="-10" r="8" fill="#fff" filter="url(#glow)" />
+      <circle cx="25" cy="-10" r="8" fill="#fff" filter="url(#glow)" />
+    </g>
+    
+    <g id="camera-flashes">
+      <circle cx="0" cy="0" r="2" fill="#fff" class="flash" style="animation-delay: 0.1s" />
+      <circle cx="100" cy="20" r="2" fill="#fff" class="flash" style="animation-delay: 1.2s" />
+      <circle cx="-150" cy="15" r="2" fill="#fff" class="flash" style="animation-delay: 0.5s" />
+      <circle cx="200" cy="5" r="2" fill="#fff" class="flash" style="animation-delay: 2.1s" />
+      <circle cx="-250" cy="10" r="2" fill="#fff" class="flash" style="animation-delay: 3.4s" />
+      <circle cx="300" cy="25" r="2" fill="#fff" class="flash" style="animation-delay: 0.8s" />
+    </g>
+
+    <g id="batter-pixel-art" shape-rendering="crispEdges">
+      <!-- Minimalist pixel art batter in Team India colors (Blue, Orange) -->
+      <!-- Head / Helmet (Navy Blue) -->
+      <path d="M12,0 h6 v2 h-6 z M10,2 h10 v6 h-10 z M8,6 h2 v4 h-2 z" fill="#000080" />
+      <!-- Visor/Face -->
+      <path d="M20,4 h4 v4 h-4 z" fill="#ffd5b5" />
+      <path d="M18,4 h2 v4 h-2 z" fill="#111" />
+      <!-- Torso (India Blue) -->
+      <path d="M10,8 h10 v12 h-10 z" fill="#0082c4" />
+      <path d="M10,12 h10 v2 h-10 z" fill="#ff9933" /> <!-- Orange stripe -->
+      <!-- Arms -->
+      <path d="M6,10 h4 v10 h-4 z" fill="#0082c4" />
+      <path d="M20,10 h4 v8 h-4 z" fill="#0082c4" />
+      <!-- Gloves -->
+      <path d="M6,20 h4 v4 h-4 z" fill="#fff" />
+      <path d="M18,18 h4 v4 h-4 z" fill="#fff" />
+      <!-- Bat -->
+      <g class="bat">
+        <path d="M16,18 h2 v-6 h-2 z" fill="#8b4513" /> <!-- Handle -->
+        <path d="M15,22 h4 v14 h-4 z M14,36 h6 v2 h-6 z" fill="#e6c280" /> <!-- Blade -->
+      </g>
+      <!-- Legs (Blue pants, white pads) -->
+      <path d="M10,20 h4 v10 h-4 z M16,20 h4 v10 h-4 z" fill="#0082c4" />
+      <path d="M8,24 h6 v12 h-6 z M16,24 h6 v12 h-6 z" fill="#fff" />
+      <path d="M10,26 h2 v8 h-2 z M18,26 h2 v8 h-2 z" fill="#ccc" />
+      <!-- Shoes -->
+      <path d="M8,36 h6 v2 h-6 z M16,36 h6 v2 h-6 z" fill="#111" />
+    </g>
+
+    <g id="bowler-pixel-art" shape-rendering="crispEdges">
+      <!-- Head -->
+      <path d="M10,2 h6 v6 h-6 z" fill="#ffd5b5" />
+      <!-- Hair -->
+      <path d="M8,0 h10 v2 h-10 z M8,2 h2 v2 h-2 z M16,2 h2 v2 h-2 z" fill="#111" />
+      <!-- Torso (India Blue) -->
+      <path d="M8,8 h10 v10 h-10 z" fill="#0082c4" />
+      <path d="M8,12 h10 v2 h-10 z" fill="#ff9933" />
+      <!-- Bowling Arm (Raised high) -->
+      <path d="M4,0 h4 v10 h-4 z" fill="#0082c4" />
+      <path d="M4,-4 h4 v4 h-4 z" fill="#ffd5b5" /> <!-- Hand -->
+      <!-- Other Arm -->
+      <path d="M18,10 h4 v8 h-4 z" fill="#0082c4" />
+      <!-- Legs -->
+      <path d="M8,18 h4 v12 h-4 z M14,18 h4 v12 h-4 z" fill="#0082c4" />
+      <!-- Shoes -->
+      <path d="M6,30 h6 v2 h-6 z M14,30 h6 v2 h-6 z" fill="#fff" />
+    </g>
+  </defs>
+
+  <!-- Background Sky -->
+  <rect width="100%" height="400" fill="url(#skyGrad)" />
+
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1.5" fill="#fff" class="star" style="animation-delay: 0s"/>
+  <circle cx="300" cy="80" r="1" fill="#fff" class="star" style="animation-delay: 1s"/>
+  <circle cx="700" cy="40" r="2" fill="#fff" class="star" style="animation-delay: 2s"/>
+  <circle cx="850" cy="90" r="1.5" fill="#fff" class="star" style="animation-delay: 0.5s"/>
+  <circle cx="500" cy="30" r="1" fill="#fff" class="star" style="animation-delay: 1.5s"/>
+
+  <!-- Stadium -->
+  <use href="#stadium-seats" x="0" y="40" />
+  
+  <g transform="translate(500, 240)">
+    <use href="#camera-flashes" />
+  </g>
+
+  <!-- Pitch Area -->
+  <ellipse cx="500" cy="330" rx="600" ry="110" fill="url(#pitchGrad)" />
+  <rect x="250" y="300" width="500" height="60" fill="url(#dirtGrad)" rx="5" />
+  
+  <!-- Crease Lines -->
+  <line x1="300" y1="300" x2="300" y2="360" stroke="#fff" stroke-width="2" />
+  <line x1="700" y1="300" x2="700" y2="360" stroke="#fff" stroke-width="2" />
+  <line x1="280" y1="310" x2="320" y2="310" stroke="#fff" stroke-width="2" />
+  <line x1="680" y1="310" x2="720" y2="310" stroke="#fff" stroke-width="2" />
+
+  <!-- Wickets -->
+  <g id="wickets" stroke="#f4a460" stroke-width="2">
+    <line x1="270" y1="335" x2="270" y2="315" />
+    <line x1="273" y1="335" x2="273" y2="315" />
+    <line x1="276" y1="335" x2="276" y2="315" />
+    <!-- Bails -->
+    <line x1="269" y1="315" x2="277" y2="315" stroke-width="1" />
+    
+    <line x1="730" y1="335" x2="730" y2="315" />
+    <line x1="733" y1="335" x2="733" y2="315" />
+    <line x1="736" y1="335" x2="736" y2="315" />
+    <line x1="729" y1="315" x2="737" y2="315" stroke-width="1" />
+  </g>
+
+  <!-- Floodlights -->
+  <use href="#floodlight" x="150" y="100" />
+  <use href="#floodlight" x="850" y="100" />
+  
+  <!-- Scoreboard screen in background -->
+  <g transform="translate(400, 100)">
+    <rect x="0" y="0" width="200" height="80" fill="#111" stroke="#333" stroke-width="4" rx="5" />
+    <text x="100" y="30" fill="#fff" font-family="Courier, monospace" font-size="14" font-weight="bold" text-anchor="middle">IND vs REST OF WORLD</text>
+    <text x="100" y="60" fill="#ff9933" font-family="Courier, monospace" font-size="24" font-weight="bold" text-anchor="middle">DAY 1</text>
+  </g>
+
+  <!-- Characters -->
+  <!-- Batter (Master Blaster) on left crease -->
+  <g transform="translate(290, 290) scale(1.5)">
+    <use href="#batter-pixel-art" />
+  </g>
+
+  <!-- Bowler (Swing King) on right crease -->
+  <g transform="translate(680, 290) scale(1.5)">
+    <use href="#bowler-pixel-art" />
+  </g>
+
+  <!-- Title Text -->
+  <g class="title">
+    <text x="500" y="60" text-anchor="middle" class="text-subtitle">ICC WORLD CUP EDITION</text>
+    <text x="500" y="100" text-anchor="middle" class="text-title">WELCOME TO THE PROFILE OF</text>
+    <!-- Replace this with a parameter when generating -->
+    <text x="500" y="170" text-anchor="middle" class="text-name">{{NAME}}</text>
+  </g>
+
+</svg>
