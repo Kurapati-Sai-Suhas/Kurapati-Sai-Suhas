@@ -8,22 +8,22 @@
 # 🏏 The Interactive Cricket GitHub Profile 🏏
 <br>
 
-<img src="./assets/hero.svg" width="100%" alt="Welcome to the Stadium" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/hero.svg" width="100%" alt="Welcome to the Stadium" />
 
 <br>
-<img src="./assets/scoreboard.svg" width="100%" alt="Match Statistics" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/scoreboard.svg" width="100%" alt="Match Statistics" />
 
 <br>
-<img src="./assets/batting.svg" width="100%" alt="Batting Average - Top Languages" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/batting.svg" width="100%" alt="Batting Average - Top Languages" />
 
 <br>
-<img src="./assets/bowling.svg" width="100%" alt="Bowling Arsenal - Technologies" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/bowling.svg" width="100%" alt="Bowling Arsenal - Technologies" />
 
 <br>
-<img src="./assets/fixtures.svg" width="100%" alt="Tournament Fixtures - Featured Projects" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/fixtures.svg" width="100%" alt="Tournament Fixtures - Featured Projects" />
 
 <br>
-<img src="./assets/footer.svg" width="100%" alt="Live Match Commentary" />
+<img src="https://raw.githubusercontent.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas/main/assets/footer.svg" width="100%" alt="Live Match Commentary" />
 
 <br>
 
