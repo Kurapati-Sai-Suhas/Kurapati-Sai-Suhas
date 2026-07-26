@@ -1,0 +1,24 @@
+{
+  "name": "cricket-profile-readme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A retro pixel-art cricket World Cup match, generated as a GitHub profile README from live GitHub API data.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/index.mjs",
+    "build:offline": "node src/index.mjs --offline",
+    "setup": "node scripts/setup.mjs",
+    "check": "node --check src/index.mjs && node scripts/lint-assets.mjs"
+  },
+  "keywords": [
+    "github-profile-readme",
+    "pixel-art",
+    "svg",
+    "cricket",
+    "github-actions"
+  ],
+  "license": "MIT"
+}

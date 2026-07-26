@@ -1,0 +1,381 @@
+{
+  "$schema": "./docs/config.schema.json",
+  "github": {
+    "username": "Kurapati-Sai-Suhas",
+    "excludeRepos": [],
+    "excludeLanguages": [
+      "HTML",
+      "CSS",
+      "Jupyter Notebook",
+      "Makefile",
+      "Dockerfile"
+    ],
+    "includeForks": false
+  },
+  "player": {
+    "displayName": "SUHAS",
+    "capNumber": "404",
+    "role": "FULL-STACK ALL-ROUNDER",
+    "tagline": "BUILDS UNDER LIGHTS. SHIPS UNDER PRESSURE.",
+    "homeGround": "INDIA",
+    "debutYear": null,
+    "socials": {
+      "linkedin": "",
+      "twitter": "",
+      "website": "",
+      "email": ""
+    }
+  },
+  "_comment_bowling": "Each entry's `keywords` are matched (case-insensitively) against your real repo languages, topics, names and descriptions. Wickets/overs are DERIVED from that match — never hand-written.",
+  "bowling": [
+    {
+      "category": "BACKEND",
+      "deliveries": [
+        {
+          "name": "Node.js",
+          "keywords": [
+            "node",
+            "nodejs",
+            "express",
+            "nestjs",
+            "javascript"
+          ]
+        },
+        {
+          "name": "Python",
+          "keywords": [
+            "python",
+            "django",
+            "flask",
+            "fastapi"
+          ]
+        },
+        {
+          "name": "Java",
+          "keywords": [
+            "java",
+            "spring",
+            "springboot"
+          ]
+        },
+        {
+          "name": "Go",
+          "keywords": [
+            "go",
+            "golang",
+            "gin"
+          ]
+        },
+        {
+          "name": "GraphQL",
+          "keywords": [
+            "graphql",
+            "apollo",
+            "relay"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "DEVOPS",
+      "deliveries": [
+        {
+          "name": "Docker",
+          "keywords": [
+            "docker",
+            "dockerfile",
+            "compose",
+            "container"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "keywords": [
+            "kubernetes",
+            "k8s",
+            "helm",
+            "kustomize"
+          ]
+        },
+        {
+          "name": "Terraform",
+          "keywords": [
+            "terraform",
+            "hcl",
+            "iac",
+            "pulumi"
+          ]
+        },
+        {
+          "name": "CI/CD",
+          "keywords": [
+            "ci",
+            "cd",
+            "actions",
+            "jenkins",
+            "pipeline",
+            "gitlab-ci"
+          ]
+        },
+        {
+          "name": "Linux",
+          "keywords": [
+            "linux",
+            "shell",
+            "bash",
+            "ubuntu",
+            "systemd"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "AI / ML",
+      "deliveries": [
+        {
+          "name": "PyTorch",
+          "keywords": [
+            "pytorch",
+            "torch"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "keywords": [
+            "tensorflow",
+            "keras"
+          ]
+        },
+        {
+          "name": "LLM / RAG",
+          "keywords": [
+            "llm",
+            "rag",
+            "langchain",
+            "openai",
+            "anthropic",
+            "embedding",
+            "vector"
+          ]
+        },
+        {
+          "name": "Pandas/NumPy",
+          "keywords": [
+            "pandas",
+            "numpy",
+            "scipy",
+            "sklearn",
+            "scikit"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "CLOUD",
+      "deliveries": [
+        {
+          "name": "AWS",
+          "keywords": [
+            "aws",
+            "lambda",
+            "s3",
+            "ec2",
+            "dynamodb",
+            "cloudformation"
+          ]
+        },
+        {
+          "name": "Azure",
+          "keywords": [
+            "azure",
+            "aks",
+            "cosmosdb"
+          ]
+        },
+        {
+          "name": "GCP",
+          "keywords": [
+            "gcp",
+            "firebase",
+            "bigquery",
+            "cloudrun"
+          ]
+        },
+        {
+          "name": "Serverless",
+          "keywords": [
+            "serverless",
+            "vercel",
+            "netlify",
+            "cloudflare",
+            "workers"
+          ]
+        }
+      ]
+    }
+  ],
+  "_comment_kit": "Your declared stack. `usedIn` counts are derived live from your repositories.",
+  "kit": [
+    {
+      "piece": "THE BAT",
+      "sub": "LANGUAGES",
+      "items": [
+        {
+          "name": "TypeScript",
+          "keywords": [
+            "typescript",
+            "ts"
+          ]
+        },
+        {
+          "name": "Python",
+          "keywords": [
+            "python"
+          ]
+        },
+        {
+          "name": "Java",
+          "keywords": [
+            "java"
+          ]
+        },
+        {
+          "name": "C++",
+          "keywords": [
+            "c++",
+            "cpp"
+          ]
+        },
+        {
+          "name": "SQL",
+          "keywords": [
+            "sql",
+            "postgres",
+            "mysql",
+            "plpgsql"
+          ]
+        }
+      ]
+    },
+    {
+      "piece": "THE PADS",
+      "sub": "FRAMEWORKS",
+      "items": [
+        {
+          "name": "React",
+          "keywords": [
+            "react",
+            "next",
+            "nextjs"
+          ]
+        },
+        {
+          "name": "Node",
+          "keywords": [
+            "node",
+            "express",
+            "nest"
+          ]
+        },
+        {
+          "name": "Spring",
+          "keywords": [
+            "spring",
+            "springboot"
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "keywords": [
+            "fastapi",
+            "flask",
+            "django"
+          ]
+        }
+      ]
+    },
+    {
+      "piece": "THE GLOVES",
+      "sub": "DATA",
+      "items": [
+        {
+          "name": "PostgreSQL",
+          "keywords": [
+            "postgres",
+            "postgresql"
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "keywords": [
+            "mongo",
+            "mongodb"
+          ]
+        },
+        {
+          "name": "Redis",
+          "keywords": [
+            "redis",
+            "cache"
+          ]
+        },
+        {
+          "name": "Kafka",
+          "keywords": [
+            "kafka",
+            "pubsub",
+            "rabbitmq"
+          ]
+        }
+      ]
+    },
+    {
+      "piece": "THE HELMET",
+      "sub": "PLATFORM",
+      "items": [
+        {
+          "name": "Docker",
+          "keywords": [
+            "docker"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "keywords": [
+            "kubernetes",
+            "k8s"
+          ]
+        },
+        {
+          "name": "AWS",
+          "keywords": [
+            "aws"
+          ]
+        },
+        {
+          "name": "Git",
+          "keywords": [
+            "git"
+          ]
+        }
+      ]
+    }
+  ],
+  "_comment_fixtures": "mode=auto ranks your real repos by stars/recency. mode=manual uses `pin` (repo names you own). Stats are always fetched live.",
+  "fixtures": {
+    "mode": "auto",
+    "count": 4,
+    "pin": []
+  },
+  "_comment_trophies": "Certifications & awards are facts only you hold — declare them here. Live-derived trophies (stars, followers, streak milestones) are added automatically.",
+  "trophies": [],
+  "goals": [
+    "SHIP ONE OPEN-SOURCE RELEASE A QUARTER",
+    "GO DEEPER ON DISTRIBUTED SYSTEMS",
+    "MENTOR TWO ENGINEERS TO THEIR FIRST PR"
+  ],
+  "render": {
+    "cacheBust": true,
+    "theme": "night-match"
+  }
+}

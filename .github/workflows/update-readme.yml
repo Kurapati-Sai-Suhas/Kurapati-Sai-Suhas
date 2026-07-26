@@ -1,0 +1,93 @@
+# Rebuilds every scene from the live GitHub API and commits the result.
+#
+# TOKEN
+# -----
+# The built-in GITHUB_TOKEN can read all public profile data, which is enough for
+# everything here. If you want private contributions counted in your totals, create a
+# classic PAT with `read:user` (plus `repo` for private repo stats), save it as the
+# repository secret PROFILE_TOKEN, and this workflow picks it up automatically.
+#
+# SCHEDULE
+# --------
+# Every six hours. Cron on GitHub is best-effort and can lag under load; the third-party
+# widgets embedded in the README render on page load, so the profile is never stale
+# between runs — only the locally rendered scenes wait for the next build.
+
+name: Update profile README
+
+on:
+  schedule:
+    - cron: '17 */6 * * *' # offset from the hour: shared runners are less contended
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Why are you rebuilding?'
+        required: false
+        default: 'manual refresh'
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'config.json'
+      - '.github/workflows/update-readme.yml'
+
+# Only ever one build in flight; a queued scheduled run should not race a manual one.
+concurrency:
+  group: readme-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Render scenes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies to install — the renderer is zero-dependency by design,
+      # which keeps this job at roughly 20 seconds end to end.
+
+      - name: Build README and scenes
+        env:
+          # PROFILE_TOKEN wins when present; otherwise the ephemeral job token is used.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: npm run build
+
+      - name: Lint generated SVGs
+        run: node scripts/lint-assets.mjs
+
+      - name: Commit if anything changed
+        run: |
+          if [ -z "$(git status --porcelain README.md assets/generated)" ]; then
+            echo "No change in the scorecard — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/generated
+          git commit -m "chore: refresh scorecard $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "### Scorecard refresh"
+            echo ""
+            echo "| Asset | Size |"
+            echo "| :-- | --: |"
+            for f in assets/generated/*.svg; do
+              printf '| `%s` | %s |\n' "$(basename "$f")" "$(du -h "$f" | cut -f1)"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"

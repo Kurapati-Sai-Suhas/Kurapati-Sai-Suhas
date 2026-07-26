@@ -1,0 +1,15 @@
+# Raw API payload from the last real fetch. Used by `npm run build:offline` to
+# re-render scenes without hitting the network. Machine-local, never committed.
+.cache/
+
+node_modules/
+npm-debug.log*
+
+# Local scratch
+*.local.*
+.DS_Store
+Thumbs.db
+
+# NOTE: assets/generated/ is intentionally NOT ignored. GitHub serves the README's
+# images straight out of the repository, so the rendered SVGs must be committed —
+# that is what the update-readme workflow pushes on every run.
