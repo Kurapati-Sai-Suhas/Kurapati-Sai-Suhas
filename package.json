@@ -11,7 +11,10 @@
     "build": "node src/index.mjs",
     "build:offline": "node src/index.mjs --offline",
     "setup": "node scripts/setup.mjs",
-    "check": "node --check src/index.mjs && node scripts/lint-assets.mjs"
+    "check": "node --check src/index.mjs && node scripts/lint-assets.mjs",
+    "preview": "node scripts/preview.mjs --open",
+    "topics": "node scripts/suggest-topics.mjs",
+    "prompts": "node scripts/project-prompts.mjs"
   },
   "keywords": [
     "github-profile-readme",
