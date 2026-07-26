@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T07:23:37.737Z",
+  "fetchedAt": "2026-07-26T16:11:08.607Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -11,14 +11,14 @@
     "website": "",
     "createdAt": "2024-12-26T15:44:33Z",
     "followers": 4,
-    "following": 9,
+    "following": 17,
     "starsGiven": 2,
     "publicRepos": 9,
     "gists": 0
   },
   "totals": {
-    "contributions": 133,
-    "thisYear": 128,
+    "contributions": 135,
+    "thisYear": 130,
     "stars": 1,
     "forks": 1,
     "repos": 9,
@@ -28,20 +28,20 @@
   "batting": {
     "matches": 9,
     "innings": 39,
-    "runs": 133,
+    "runs": 135,
     "privateRuns": 0,
     "notOut": 39,
     "highest": 18,
     "highestOn": "2026-06-17",
-    "average": 3.41,
-    "strikeRate": 23.1,
+    "average": 3.46,
+    "strikeRate": 23.4,
     "centuries": 0,
     "fifties": 1,
     "fours": 0,
     "sixes": 0,
     "debut": "2024-12-26",
-    "daysSinceDebut": 577,
-    "consistency": 6.8
+    "daysSinceDebut": 578,
+    "consistency": 6.7
   },
   "bowling": {
     "overs": 0,
@@ -65,27 +65,27 @@
   "languages": [
     {
       "name": "Python",
-      "bytes": 817017,
-      "share": 34,
+      "bytes": 868201,
+      "share": 35.1,
       "repos": 6,
       "color": null,
-      "runs": 798
+      "runs": 848
     },
     {
       "name": "TypeScript",
       "bytes": 805226,
-      "share": 33.5,
+      "share": 32.6,
       "repos": 2,
       "color": null,
       "runs": 786
     },
     {
       "name": "JavaScript",
-      "bytes": 774028,
-      "share": 32.2,
+      "bytes": 792719,
+      "share": 32.1,
       "repos": 7,
       "color": null,
-      "runs": 756
+      "runs": 774
     }
   ],
   "arsenal": [
@@ -94,19 +94,27 @@
       "deliveries": [
         {
           "name": "LLM / RAG",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 1,
+          "overs": 6,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 160
         },
         {
           "name": "NVIDIA NIM",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 1,
+          "overs": 6,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 160
+        },
+        {
+          "name": "Transformers",
+          "wickets": 1,
+          "overs": 4,
+          "stars": 0,
+          "lastUsed": "2026-07-06T16:42:31Z",
+          "pace": 152
         },
         {
           "name": "Groq/Gemini",
@@ -123,14 +131,6 @@
           "stars": 0,
           "lastUsed": null,
           "pace": 118
-        },
-        {
-          "name": "Transformers",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
         }
       ]
     },
@@ -138,31 +138,31 @@
       "category": "VISION / MODELS",
       "deliveries": [
         {
-          "name": "PyTorch",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
-        },
-        {
           "name": "TensorFlow",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 1,
+          "overs": 4,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-06T16:42:31Z",
+          "pace": 160
         },
         {
           "name": "MediaPipe",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 1,
+          "overs": 4,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-06T16:42:31Z",
+          "pace": 160
         },
         {
           "name": "OpenCV",
+          "wickets": 1,
+          "overs": 4,
+          "stars": 0,
+          "lastUsed": "2026-07-06T16:42:31Z",
+          "pace": 160
+        },
+        {
+          "name": "PyTorch",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -185,34 +185,34 @@
         {
           "name": "React/Node",
           "wickets": 7,
-          "overs": 90,
+          "overs": 92,
           "stars": 1,
-          "lastUsed": "2026-07-26T07:23:23Z",
+          "lastUsed": "2026-07-26T13:58:07Z",
           "pace": 160
         },
         {
           "name": "Python",
           "wickets": 6,
-          "overs": 82,
+          "overs": 83,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 158
         },
         {
           "name": "Django REST",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 2,
+          "overs": 10,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 132
         },
         {
           "name": "Celery/Redis",
-          "wickets": 0,
-          "overs": 0,
+          "wickets": 1,
+          "overs": 6,
           "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 129
         },
         {
           "name": "PostgreSQL",
@@ -238,9 +238,17 @@
         {
           "name": "Docker",
           "wickets": 2,
+          "overs": 7,
+          "stars": 0,
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 131
+        },
+        {
+          "name": "Auth / RBAC",
+          "wickets": 1,
           "overs": 6,
           "stars": 0,
-          "lastUsed": "2026-07-21T17:12:25Z",
+          "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 130
         },
         {
@@ -258,14 +266,6 @@
           "stars": 0,
           "lastUsed": null,
           "pace": 118
-        },
-        {
-          "name": "Auth / RBAC",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
         }
       ]
     }
@@ -278,12 +278,12 @@
         {
           "name": "JavaScript",
           "usedIn": 7,
-          "commits": 90
+          "commits": 92
         },
         {
           "name": "Python",
           "usedIn": 6,
-          "commits": 82
+          "commits": 83
         },
         {
           "name": "TypeScript",
@@ -308,21 +308,21 @@
       "items": [
         {
           "name": "Django REST",
-          "usedIn": 0,
-          "commits": 0
+          "usedIn": 2,
+          "commits": 10
         },
         {
           "name": "React",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "FastAPI",
-          "usedIn": 0,
-          "commits": 0
+          "usedIn": 2,
+          "commits": 10
         },
         {
           "name": "Celery",
+          "usedIn": 1,
+          "commits": 6
+        },
+        {
+          "name": "FastAPI",
           "usedIn": 0,
           "commits": 0
         }
@@ -359,12 +359,12 @@
       "sub": "MODELS + OPS",
       "items": [
         {
-          "name": "PyTorch",
-          "usedIn": 0,
-          "commits": 0
+          "name": "TensorFlow",
+          "usedIn": 1,
+          "commits": 4
         },
         {
-          "name": "TensorFlow",
+          "name": "PyTorch",
           "usedIn": 0,
           "commits": 0
         },
@@ -400,6 +400,23 @@
       "archived": false
     },
     {
+      "name": "Kurapati-Sai-Suhas",
+      "description": "My Interactive Cricket Profile README",
+      "url": "https://github.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "commits": 5,
+      "language": "JavaScript",
+      "languageColor": null,
+      "topics": [],
+      "pushedAt": "2026-07-26T13:58:07Z",
+      "daysSincePush": 0,
+      "releases": 0,
+      "archived": false
+    },
+    {
       "name": "cricket-profile-readme",
       "description": "",
       "url": "https://github.com/Kurapati-Sai-Suhas/cricket-profile-readme",
@@ -411,42 +428,30 @@
       "language": "JavaScript",
       "languageColor": null,
       "topics": [],
-      "pushedAt": "2026-07-26T07:23:23Z",
-      "daysSincePush": 0,
-      "releases": 0,
-      "archived": false
-    },
-    {
-      "name": "Kurapati-Sai-Suhas",
-      "description": "My Interactive Cricket Profile README",
-      "url": "https://github.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "commits": 4,
-      "language": "JavaScript",
-      "languageColor": null,
-      "topics": [],
-      "pushedAt": "2026-07-26T07:09:54Z",
+      "pushedAt": "2026-07-26T13:55:52Z",
       "daysSincePush": 0,
       "releases": 0,
       "archived": false
     },
     {
       "name": "GxP-Training-Bot",
-      "description": "",
+      "description": "Django REST + React platform that turns pharma SOPs into role-specific quizzes via NVIDIA NIM (Llama 3.1), with a deterministic offline fallback, RBAC-gated endpoints, 21 CFR Part 11-style e-signatures/audit trail, and Leitner+FSRS adaptive retraining.",
       "url": "https://github.com/Kurapati-Sai-Suhas/GxP-Training-Bot",
       "homepage": null,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 5,
+      "commits": 6,
       "language": "Python",
       "languageColor": null,
-      "topics": [],
-      "pushedAt": "2026-07-21T17:12:25Z",
-      "daysSincePush": 5,
+      "topics": [
+        "21-cfr-part-11",
+        "audit-log",
+        "celery",
+        "compliance"
+      ],
+      "pushedAt": "2026-07-26T07:49:59Z",
+      "daysSincePush": 0,
       "releases": 0,
       "archived": false
     }
@@ -485,7 +490,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 128,
+    "totalContributions": 130,
     "weeks": [
       {
         "contributionDays": [
@@ -753,7 +758,7 @@
           {
             "date": "2026-07-26",
             "weekday": 0,
-            "contributionCount": 10
+            "contributionCount": 12
           }
         ]
       },
@@ -2523,10 +2528,10 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-07-26T07:23:23Z",
+    "lastPush": "2026-07-26T13:58:07Z",
     "lastEventType": "PushEvent",
-    "lastEventRepo": "Kurapati-Sai-Suhas/cricket-profile-readme",
-    "lastEventAt": "2026-07-26T07:23:24Z"
+    "lastEventRepo": "Kurapati-Sai-Suhas/GxP-Training-Bot",
+    "lastEventAt": "2026-07-26T07:50:00Z"
   },
   "topRepo": {
     "name": "SparkLM",
