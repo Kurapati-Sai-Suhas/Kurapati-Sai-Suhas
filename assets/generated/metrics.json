@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T16:51:32.694Z",
+  "fetchedAt": "2026-07-26T19:35:37.362Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -12,14 +12,14 @@
     "createdAt": "2024-12-26T15:44:33Z",
     "followers": 4,
     "following": 17,
-    "starsGiven": 2,
+    "starsGiven": 5,
     "publicRepos": 9,
     "gists": 0
   },
   "totals": {
     "contributions": 144,
     "thisYear": 139,
-    "stars": 1,
+    "stars": 4,
     "forks": 1,
     "repos": 9,
     "activeDays": 39,
@@ -246,7 +246,7 @@
       {
         "name": "Mail-Mind-Ai",
         "commits": 1,
-        "stars": 0
+        "stars": 1
       },
       {
         "name": "Crop-Recommendation-website",
@@ -273,7 +273,7 @@
           "name": "LLM / RAG",
           "wickets": 2,
           "overs": 77,
-          "stars": 1,
+          "stars": 2,
           "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
@@ -289,7 +289,7 @@
           "name": "NVIDIA NIM",
           "wickets": 1,
           "overs": 6,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 130
         },
@@ -297,7 +297,7 @@
           "name": "Transformers",
           "wickets": 1,
           "overs": 4,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-06T16:42:31Z",
           "pace": 128
         },
@@ -318,7 +318,7 @@
           "name": "OpenCV",
           "wickets": 2,
           "overs": 75,
-          "stars": 1,
+          "stars": 2,
           "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
@@ -326,7 +326,7 @@
           "name": "TensorFlow",
           "wickets": 1,
           "overs": 4,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-06T16:42:31Z",
           "pace": 128
         },
@@ -334,7 +334,7 @@
           "name": "MediaPipe",
           "wickets": 1,
           "overs": 4,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-06T16:42:31Z",
           "pace": 128
         },
@@ -363,15 +363,15 @@
           "name": "React/Node",
           "wickets": 7,
           "overs": 101,
-          "stars": 1,
-          "lastUsed": "2026-07-26T16:51:21Z",
+          "stars": 3,
+          "lastUsed": "2026-07-26T16:51:34Z",
           "pace": 160
         },
         {
           "name": "Python",
           "wickets": 6,
           "overs": 84,
-          "stars": 1,
+          "stars": 4,
           "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 156
         },
@@ -379,7 +379,7 @@
           "name": "Django REST",
           "wickets": 3,
           "overs": 81,
-          "stars": 1,
+          "stars": 3,
           "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 156
         },
@@ -395,7 +395,7 @@
           "name": "Celery/Redis",
           "wickets": 1,
           "overs": 6,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 128
         }
@@ -432,7 +432,7 @@
           "name": "Docker",
           "wickets": 2,
           "overs": 7,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 131
         },
@@ -440,7 +440,7 @@
           "name": "Auth / RBAC",
           "wickets": 1,
           "overs": 6,
-          "stars": 0,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 130
         }
@@ -582,47 +582,13 @@
       "archived": false
     },
     {
-      "name": "Kurapati-Sai-Suhas",
-      "description": "My Interactive Cricket Profile README",
-      "url": "https://github.com/Kurapati-Sai-Suhas/Kurapati-Sai-Suhas",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "commits": 9,
-      "language": "JavaScript",
-      "languageColor": null,
-      "topics": [],
-      "pushedAt": "2026-07-26T16:51:21Z",
-      "daysSincePush": 0,
-      "releases": 0,
-      "archived": false
-    },
-    {
-      "name": "cricket-profile-readme",
-      "description": "",
-      "url": "https://github.com/Kurapati-Sai-Suhas/cricket-profile-readme",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "commits": 9,
-      "language": "JavaScript",
-      "languageColor": null,
-      "topics": [],
-      "pushedAt": "2026-07-26T16:51:17Z",
-      "daysSincePush": 0,
-      "releases": 0,
-      "archived": false
-    },
-    {
       "name": "GxP-Training-Bot",
       "description": "Django REST + React platform that turns pharma SOPs into role-specific quizzes via NVIDIA NIM (Llama 3.1), with a deterministic offline fallback, RBAC-gated endpoints, 21 CFR Part 11-style e-signatures/audit trail, and Leitner+FSRS adaptive retraining.",
       "url": "https://github.com/Kurapati-Sai-Suhas/GxP-Training-Bot",
       "homepage": null,
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
-      "watchers": 0,
+      "watchers": 1,
       "commits": 6,
       "language": "Python",
       "languageColor": null,
@@ -634,6 +600,45 @@
       ],
       "pushedAt": "2026-07-26T07:49:59Z",
       "daysSincePush": 0,
+      "releases": 0,
+      "archived": false
+    },
+    {
+      "name": "Suhasvision",
+      "description": "A Django/DRF backend runs MediaPipe BlazePose pose estimation through a Keras BiLSTM-attention model that reports Monte Carlo Dropout uncertainty and Expected Gradients attribution to score cricket batting stances, served via a React/TanStack frontend, with an academic evaluation suite (leave-one-out and grouped cross-validation, ablations).",
+      "url": "https://github.com/Kurapati-Sai-Suhas/Suhasvision",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "commits": 4,
+      "language": "JavaScript",
+      "languageColor": null,
+      "topics": [
+        "bilstm",
+        "blazepose",
+        "computer-vision",
+        "cricket"
+      ],
+      "pushedAt": "2026-07-06T16:42:31Z",
+      "daysSincePush": 20,
+      "releases": 0,
+      "archived": false
+    },
+    {
+      "name": "Mail-Mind-Ai",
+      "description": "",
+      "url": "https://github.com/Kurapati-Sai-Suhas/Mail-Mind-Ai",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "commits": 1,
+      "language": "Python",
+      "languageColor": null,
+      "topics": [],
+      "pushedAt": "2026-07-06T16:07:50Z",
+      "daysSincePush": 20,
       "releases": 0,
       "archived": false
     }
@@ -2710,10 +2715,10 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-07-26T16:51:21Z",
-    "lastEventType": "PushEvent",
-    "lastEventRepo": "Kurapati-Sai-Suhas/Kurapati-Sai-Suhas",
-    "lastEventAt": "2026-07-26T16:51:22Z"
+    "lastPush": "2026-07-26T16:51:34Z",
+    "lastEventType": "WatchEvent",
+    "lastEventRepo": "Kurapati-Sai-Suhas/Mail-Mind-Ai",
+    "lastEventAt": "2026-07-26T17:29:06Z"
   },
   "topRepo": {
     "name": "SparkLM",
