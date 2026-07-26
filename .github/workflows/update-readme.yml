@@ -12,6 +12,18 @@
 # Every six hours. Cron on GitHub is best-effort and can lag under load; the third-party
 # widgets embedded in the README render on page load, so the profile is never stale
 # between runs — only the locally rendered scenes wait for the next build.
+#
+# MIRRORS
+# -------
+# This repository is commonly present twice: once as <user>/<user> (the profile README
+# GitHub actually displays) and once as a normal repo holding the same code. If BOTH ran
+# the schedule, both would commit regenerated scenes on their own cadence and a single
+# local branch could no longer fast-forward to either — every push would need a rebase
+# through a conflicted binary SVG.
+#
+# So scheduled runs only COMMIT in the profile repository, identified by the
+# owner/owner naming convention. A mirror still builds and lints on push, which is what
+# makes it useful as CI, but it never writes.
 
 name: Update profile README
 
@@ -85,8 +97,17 @@ jobs:
       - name: Lint generated SVGs
         run: node scripts/lint-assets.mjs
 
+      # Writes are restricted to the profile repository — see MIRRORS at the top of this
+      # file. A mirror still builds and lints above, it just does not commit.
       - name: Commit if anything changed
+        env:
+          IS_PROFILE_REPO: ${{ github.repository == format('{0}/{0}', github.repository_owner) }}
         run: |
+          if [ "$IS_PROFILE_REPO" != "true" ]; then
+            echo "Not the profile repository ($GITHUB_REPOSITORY) — built and linted, but not committing."
+            echo "Only ${GITHUB_REPOSITORY_OWNER}/${GITHUB_REPOSITORY_OWNER} writes regenerated scenes."
+            exit 0
+          fi
           if [ -z "$(git status --porcelain README.md assets/generated)" ]; then
             echo "No change in the scorecard — nothing to commit."
             exit 0
