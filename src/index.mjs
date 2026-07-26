@@ -130,5 +130,7 @@ main().catch((err) => {
   const known = err instanceof ConfigError || err instanceof GitHubError || err instanceof RestError;
   process.stderr.write(`\n${known ? 'BUILD STOPPED' : 'UNEXPECTED ERROR'}\n${err.message}\n`);
   if (!known) process.stderr.write(String(err.stack) + '\n');
-  process.exit(1);
+  // exitCode rather than exit(): tearing down while a fetch socket is mid-close trips
+  // a libuv assertion on Windows, which buries the real error message under a crash.
+  process.exitCode = 1;
 });

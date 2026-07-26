@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T06:52:47.032Z",
+  "fetchedAt": "2026-07-26T06:34:51.602Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -13,35 +13,35 @@
     "followers": 3,
     "following": 9,
     "starsGiven": 2,
-    "publicRepos": 9,
+    "publicRepos": 8,
     "gists": 0
   },
   "totals": {
-    "contributions": 127,
-    "thisYear": 122,
+    "contributions": 123,
+    "thisYear": 118,
     "stars": 1,
     "forks": 1,
-    "repos": 9,
-    "activeDays": 39,
+    "repos": 8,
+    "activeDays": 38,
     "years": 3
   },
   "batting": {
-    "matches": 9,
-    "innings": 39,
-    "runs": 127,
+    "matches": 8,
+    "innings": 38,
+    "runs": 123,
     "privateRuns": 0,
-    "notOut": 39,
+    "notOut": 38,
     "highest": 18,
     "highestOn": "2026-06-17",
-    "average": 3.26,
-    "strikeRate": 22,
+    "average": 3.24,
+    "strikeRate": 21.3,
     "centuries": 0,
     "fifties": 1,
     "fours": 0,
     "sixes": 0,
     "debut": "2024-12-26",
     "daysSinceDebut": 577,
-    "consistency": 6.8
+    "consistency": 6.6
   },
   "bowling": {
     "overs": 0,
@@ -59,14 +59,14 @@
     "runOuts": 0
   },
   "streak": {
-    "current": 39,
-    "longest": 39
+    "current": 38,
+    "longest": 38
   },
   "languages": [
     {
       "name": "Python",
       "bytes": 817017,
-      "share": 36.7,
+      "share": 39.4,
       "repos": 6,
       "color": null,
       "runs": 798
@@ -74,50 +74,26 @@
     {
       "name": "TypeScript",
       "bytes": 805226,
-      "share": 36.2,
+      "share": 38.8,
       "repos": 2,
       "color": null,
       "runs": 786
     },
     {
       "name": "JavaScript",
-      "bytes": 599268,
-      "share": 26.9,
-      "repos": 7,
+      "bytes": 444752,
+      "share": 21.5,
+      "repos": 6,
       "color": null,
-      "runs": 585
+      "runs": 434
     }
   ],
   "arsenal": [
     {
-      "category": "BACKEND",
+      "category": "AI / LLM",
       "deliveries": [
         {
-          "name": "Node.js",
-          "wickets": 7,
-          "overs": 90,
-          "stars": 1,
-          "lastUsed": "2026-07-26T06:52:37Z",
-          "pace": 160
-        },
-        {
-          "name": "Python",
-          "wickets": 6,
-          "overs": 82,
-          "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 158
-        },
-        {
-          "name": "Java",
-          "wickets": 1,
-          "overs": 70,
-          "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 155
-        },
-        {
-          "name": "Go",
+          "name": "LLM / RAG",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -125,7 +101,31 @@
           "pace": 118
         },
         {
-          "name": "GraphQL",
+          "name": "NVIDIA NIM",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        },
+        {
+          "name": "Groq/Gemini",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        },
+        {
+          "name": "Embeddings",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        },
+        {
+          "name": "Transformers",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -135,52 +135,7 @@
       ]
     },
     {
-      "category": "DEVOPS",
-      "deliveries": [
-        {
-          "name": "Linux",
-          "wickets": 1,
-          "overs": 70,
-          "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 160
-        },
-        {
-          "name": "Docker",
-          "wickets": 2,
-          "overs": 6,
-          "stars": 0,
-          "lastUsed": "2026-07-21T17:12:25Z",
-          "pace": 130
-        },
-        {
-          "name": "Kubernetes",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
-        },
-        {
-          "name": "Terraform",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
-        },
-        {
-          "name": "CI/CD",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
-        }
-      ]
-    },
-    {
-      "category": "AI / ML",
+      "category": "VISION / MODELS",
       "deliveries": [
         {
           "name": "PyTorch",
@@ -199,7 +154,15 @@
           "pace": 118
         },
         {
-          "name": "LLM / RAG",
+          "name": "MediaPipe",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        },
+        {
+          "name": "OpenCV",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -217,10 +180,26 @@
       ]
     },
     {
-      "category": "CLOUD",
+      "category": "BACKEND",
       "deliveries": [
         {
-          "name": "AWS",
+          "name": "React/Node",
+          "wickets": 6,
+          "overs": 87,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 160
+        },
+        {
+          "name": "Python",
+          "wickets": 6,
+          "overs": 82,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 159
+        },
+        {
+          "name": "Django REST",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -228,7 +207,7 @@
           "pace": 118
         },
         {
-          "name": "Azure",
+          "name": "Celery/Redis",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -236,7 +215,36 @@
           "pace": 118
         },
         {
-          "name": "GCP",
+          "name": "PostgreSQL",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        }
+      ]
+    },
+    {
+      "category": "PRODUCTION",
+      "deliveries": [
+        {
+          "name": "Linux",
+          "wickets": 1,
+          "overs": 70,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 160
+        },
+        {
+          "name": "Docker",
+          "wickets": 2,
+          "overs": 6,
+          "stars": 0,
+          "lastUsed": "2026-07-21T17:12:25Z",
+          "pace": 130
+        },
+        {
+          "name": "CI / Tests",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -244,7 +252,15 @@
           "pace": 118
         },
         {
-          "name": "Serverless",
+          "name": "Sandboxing",
+          "wickets": 0,
+          "overs": 0,
+          "stars": 0,
+          "lastUsed": null,
+          "pace": 118
+        },
+        {
+          "name": "Auth / RBAC",
           "wickets": 0,
           "overs": 0,
           "stars": 0,
@@ -260,6 +276,11 @@
       "sub": "LANGUAGES",
       "items": [
         {
+          "name": "JavaScript",
+          "usedIn": 6,
+          "commits": 87
+        },
+        {
           "name": "Python",
           "usedIn": 6,
           "commits": 82
@@ -270,17 +291,12 @@
           "commits": 74
         },
         {
-          "name": "Java",
-          "usedIn": 1,
-          "commits": 70
-        },
-        {
-          "name": "C++",
+          "name": "SQL",
           "usedIn": 0,
           "commits": 0
         },
         {
-          "name": "SQL",
+          "name": "C++",
           "usedIn": 0,
           "commits": 0
         }
@@ -291,17 +307,12 @@
       "sub": "FRAMEWORKS",
       "items": [
         {
+          "name": "Django REST",
+          "usedIn": 0,
+          "commits": 0
+        },
+        {
           "name": "React",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "Node",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "Spring",
           "usedIn": 0,
           "commits": 0
         },
@@ -309,12 +320,17 @@
           "name": "FastAPI",
           "usedIn": 0,
           "commits": 0
+        },
+        {
+          "name": "Celery",
+          "usedIn": 0,
+          "commits": 0
         }
       ]
     },
     {
       "piece": "THE GLOVES",
-      "sub": "DATA",
+      "sub": "DATA + RAG",
       "items": [
         {
           "name": "PostgreSQL",
@@ -322,7 +338,7 @@
           "commits": 0
         },
         {
-          "name": "MongoDB",
+          "name": "ChromaDB",
           "usedIn": 0,
           "commits": 0
         },
@@ -332,7 +348,7 @@
           "commits": 0
         },
         {
-          "name": "Kafka",
+          "name": "Pandas",
           "usedIn": 0,
           "commits": 0
         }
@@ -340,25 +356,25 @@
     },
     {
       "piece": "THE HELMET",
-      "sub": "PLATFORM",
+      "sub": "MODELS + OPS",
       "items": [
         {
+          "name": "PyTorch",
+          "usedIn": 0,
+          "commits": 0
+        },
+        {
+          "name": "TensorFlow",
+          "usedIn": 0,
+          "commits": 0
+        },
+        {
+          "name": "Ollama",
+          "usedIn": 0,
+          "commits": 0
+        },
+        {
           "name": "Docker",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "Kubernetes",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "AWS",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "Git",
           "usedIn": 0,
           "commits": 0
         }
@@ -380,23 +396,6 @@
       "topics": [],
       "pushedAt": "2026-07-23T04:36:49Z",
       "daysSincePush": 3,
-      "releases": 0,
-      "archived": false
-    },
-    {
-      "name": "cricket-profile-readme",
-      "description": "",
-      "url": "https://github.com/Kurapati-Sai-Suhas/cricket-profile-readme",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "commits": 3,
-      "language": "JavaScript",
-      "languageColor": null,
-      "topics": [],
-      "pushedAt": "2026-07-26T06:52:37Z",
-      "daysSincePush": 0,
       "releases": 0,
       "archived": false
     },
@@ -433,9 +432,33 @@
       "daysSincePush": 7,
       "releases": 0,
       "archived": false
+    },
+    {
+      "name": "Suhasvision",
+      "description": "",
+      "url": "https://github.com/Kurapati-Sai-Suhas/Suhasvision",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "commits": 4,
+      "language": "JavaScript",
+      "languageColor": null,
+      "topics": [],
+      "pushedAt": "2026-07-06T16:42:31Z",
+      "daysSincePush": 20,
+      "releases": 0,
+      "archived": false
     }
   ],
   "trophies": [
+    {
+      "title": "NVIDIA GEN AI/LLM",
+      "issuer": "NVIDIA CERTIFIED ASSOC",
+      "year": "",
+      "url": "",
+      "kind": "cert"
+    },
     {
       "title": "1+ STARS",
       "issuer": "COMMUNITY",
@@ -449,7 +472,7 @@
       "kind": "live"
     },
     {
-      "title": "39-DAY STREAK",
+      "title": "38-DAY STREAK",
       "issuer": "ENDURANCE",
       "year": "",
       "kind": "live"
@@ -462,7 +485,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 122,
+    "totalContributions": 118,
     "weeks": [
       {
         "contributionDays": [
@@ -730,7 +753,7 @@
           {
             "date": "2026-07-26",
             "weekday": 0,
-            "contributionCount": 4
+            "contributionCount": 0
           }
         ]
       },
@@ -2500,10 +2523,10 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-07-26T06:52:37Z",
+    "lastPush": "2026-07-23T04:36:49Z",
     "lastEventType": "PushEvent",
-    "lastEventRepo": "Kurapati-Sai-Suhas/cricket-profile-readme",
-    "lastEventAt": "2026-07-26T06:52:37Z"
+    "lastEventRepo": "Kurapati-Sai-Suhas/SparkLM",
+    "lastEventAt": "2026-07-23T04:36:50Z"
   },
   "topRepo": {
     "name": "SparkLM",

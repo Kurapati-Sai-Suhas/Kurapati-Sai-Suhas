@@ -15,8 +15,8 @@
   "player": {
     "displayName": "SUHAS",
     "capNumber": "404",
-    "role": "FULL-STACK ALL-ROUNDER",
-    "tagline": "BUILDS UNDER LIGHTS. SHIPS UNDER PRESSURE.",
+    "role": "AI/ML ENGINEER IN TRAINING",
+    "tagline": "FROM WORKS ON MY MACHINE TO WORKS IN PRODUCTION",
     "homeGround": "INDIA",
     "debutYear": null,
     "socials": {
@@ -29,108 +29,70 @@
   "_comment_bowling": "Each entry's `keywords` are matched (case-insensitively) against your real repo languages, topics, names and descriptions. Wickets/overs are DERIVED from that match — never hand-written.",
   "bowling": [
     {
-      "category": "BACKEND",
+      "category": "AI / LLM",
       "deliveries": [
         {
-          "name": "Node.js",
+          "name": "LLM / RAG",
           "keywords": [
-            "node",
-            "nodejs",
-            "express",
-            "nestjs",
-            "javascript"
+            "llm",
+            "rag",
+            "retrieval",
+            "langchain",
+            "llamaindex",
+            "prompt",
+            "genai",
+            "generative-ai"
           ]
         },
         {
-          "name": "Python",
+          "name": "NVIDIA NIM",
           "keywords": [
-            "python",
-            "django",
-            "flask",
-            "fastapi"
+            "nim",
+            "nvidia",
+            "nemo",
+            "llama",
+            "llama3"
           ]
         },
         {
-          "name": "Java",
+          "name": "Groq/Gemini",
           "keywords": [
-            "java",
-            "spring",
-            "springboot"
+            "groq",
+            "gemini",
+            "openai",
+            "anthropic",
+            "ollama",
+            "mistral"
           ]
         },
         {
-          "name": "Go",
+          "name": "Embeddings",
           "keywords": [
-            "go",
-            "golang",
-            "gin"
+            "embedding",
+            "embeddings",
+            "chromadb",
+            "chroma",
+            "faiss",
+            "pinecone",
+            "vector-database",
+            "sentence-transformers"
           ]
         },
         {
-          "name": "GraphQL",
+          "name": "Transformers",
           "keywords": [
-            "graphql",
-            "apollo",
-            "relay"
+            "transformers",
+            "huggingface",
+            "bert",
+            "lstm",
+            "tcn",
+            "attention"
           ]
         }
       ]
     },
     {
-      "category": "DEVOPS",
-      "deliveries": [
-        {
-          "name": "Docker",
-          "keywords": [
-            "docker",
-            "dockerfile",
-            "compose",
-            "container"
-          ]
-        },
-        {
-          "name": "Kubernetes",
-          "keywords": [
-            "kubernetes",
-            "k8s",
-            "helm",
-            "kustomize"
-          ]
-        },
-        {
-          "name": "Terraform",
-          "keywords": [
-            "terraform",
-            "hcl",
-            "iac",
-            "pulumi"
-          ]
-        },
-        {
-          "name": "CI/CD",
-          "keywords": [
-            "ci",
-            "cd",
-            "actions",
-            "jenkins",
-            "pipeline",
-            "gitlab-ci"
-          ]
-        },
-        {
-          "name": "Linux",
-          "keywords": [
-            "linux",
-            "shell",
-            "bash",
-            "ubuntu",
-            "systemd"
-          ]
-        }
-      ]
-    },
-    {
-      "category": "AI / ML",
+      "category": "VISION / MODELS",
       "deliveries": [
         {
           "name": "PyTorch",
@@ -147,15 +109,23 @@
           ]
         },
         {
-          "name": "LLM / RAG",
+          "name": "MediaPipe",
           "keywords": [
-            "llm",
-            "rag",
-            "langchain",
-            "openai",
-            "anthropic",
-            "embedding",
-            "vector"
+            "mediapipe",
+            "blazepose",
+            "pose-estimation",
+            "pose"
+          ]
+        },
+        {
+          "name": "OpenCV",
+          "keywords": [
+            "opencv",
+            "opencv-python",
+            "computer-vision",
+            "cv2",
+            "yolo",
+            "ultralytics"
           ]
         },
         {
@@ -165,50 +135,116 @@
             "numpy",
             "scipy",
             "sklearn",
-            "scikit"
+            "scikit-learn",
+            "matplotlib",
+            "seaborn"
           ]
         }
       ]
     },
     {
-      "category": "CLOUD",
+      "category": "BACKEND",
       "deliveries": [
         {
-          "name": "AWS",
+          "name": "Django REST",
           "keywords": [
-            "aws",
-            "lambda",
-            "s3",
-            "ec2",
-            "dynamodb",
-            "cloudformation"
+            "django",
+            "django-rest-framework",
+            "drf",
+            "djangorestframework"
           ]
         },
         {
-          "name": "Azure",
+          "name": "Python",
           "keywords": [
-            "azure",
-            "aks",
-            "cosmosdb"
+            "python"
           ]
         },
         {
-          "name": "GCP",
+          "name": "Celery/Redis",
           "keywords": [
-            "gcp",
-            "firebase",
-            "bigquery",
-            "cloudrun"
+            "celery",
+            "redis",
+            "queue",
+            "worker",
+            "broker"
           ]
         },
         {
-          "name": "Serverless",
+          "name": "PostgreSQL",
           "keywords": [
-            "serverless",
-            "vercel",
-            "netlify",
-            "cloudflare",
-            "workers"
+            "postgres",
+            "postgresql",
+            "psycopg",
+            "sqlalchemy"
+          ]
+        },
+        {
+          "name": "React/Node",
+          "keywords": [
+            "react",
+            "nextjs",
+            "node",
+            "nodejs",
+            "express",
+            "typescript",
+            "javascript"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "PRODUCTION",
+      "deliveries": [
+        {
+          "name": "Docker",
+          "keywords": [
+            "docker",
+            "dockerfile",
+            "compose",
+            "container"
+          ]
+        },
+        {
+          "name": "CI / Tests",
+          "keywords": [
+            "ci",
+            "cd",
+            "actions",
+            "github-actions",
+            "pytest",
+            "test",
+            "tests",
+            "jest"
+          ]
+        },
+        {
+          "name": "Sandboxing",
+          "keywords": [
+            "judge0",
+            "sandbox",
+            "isolate",
+            "execution"
+          ]
+        },
+        {
+          "name": "Auth / RBAC",
+          "keywords": [
+            "rbac",
+            "auth",
+            "jwt",
+            "oauth",
+            "permissions",
+            "audit"
+          ]
+        },
+        {
+          "name": "Linux",
+          "keywords": [
+            "linux",
+            "shell",
+            "bash",
+            "ubuntu"
           ]
         }
       ]
@@ -221,29 +257,21 @@
       "sub": "LANGUAGES",
       "items": [
         {
-          "name": "TypeScript",
-          "keywords": [
-            "typescript",
-            "ts"
-          ]
-        },
-        {
           "name": "Python",
           "keywords": [
             "python"
           ]
         },
         {
-          "name": "Java",
+          "name": "JavaScript",
           "keywords": [
-            "java"
+            "javascript"
           ]
         },
         {
-          "name": "C++",
+          "name": "TypeScript",
           "keywords": [
-            "c++",
-            "cpp"
+            "typescript"
           ]
         },
         {
@@ -251,8 +279,15 @@
           "keywords": [
             "sql",
             "postgres",
-            "mysql",
-            "plpgsql"
+            "postgresql",
+            "sqlite"
+          ]
+        },
+        {
+          "name": "C++",
+          "keywords": [
+            "c++",
+            "cpp"
           ]
         }
       ]
@@ -262,26 +297,19 @@
       "sub": "FRAMEWORKS",
       "items": [
         {
+          "name": "Django REST",
+          "keywords": [
+            "django",
+            "drf",
+            "djangorestframework"
+          ]
+        },
+        {
           "name": "React",
           "keywords": [
             "react",
-            "next",
-            "nextjs"
-          ]
-        },
-        {
-          "name": "Node",
-          "keywords": [
-            "node",
-            "express",
-            "nest"
-          ]
-        },
-        {
-          "name": "Spring",
-          "keywords": [
-            "spring",
-            "springboot"
+            "nextjs",
+            "vite"
           ]
         },
         {
@@ -289,14 +317,21 @@
           "keywords": [
             "fastapi",
             "flask",
-            "django"
+            "streamlit"
+          ]
+        },
+        {
+          "name": "Celery",
+          "keywords": [
+            "celery",
+            "redis"
           ]
         }
       ]
     },
     {
       "piece": "THE GLOVES",
-      "sub": "DATA",
+      "sub": "DATA + RAG",
       "items": [
         {
           "name": "PostgreSQL",
@@ -306,10 +341,11 @@
           ]
         },
         {
-          "name": "MongoDB",
+          "name": "ChromaDB",
           "keywords": [
-            "mongo",
-            "mongodb"
+            "chromadb",
+            "chroma",
+            "vector-database"
           ]
         },
         {
@@ -320,42 +356,43 @@
           ]
         },
         {
-          "name": "Kafka",
+          "name": "Pandas",
           "keywords": [
-            "kafka",
-            "pubsub",
-            "rabbitmq"
+            "pandas",
+            "numpy"
           ]
         }
       ]
     },
     {
       "piece": "THE HELMET",
-      "sub": "PLATFORM",
+      "sub": "MODELS + OPS",
       "items": [
+        {
+          "name": "PyTorch",
+          "keywords": [
+            "pytorch",
+            "torch"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "keywords": [
+            "tensorflow",
+            "keras"
+          ]
+        },
+        {
+          "name": "Ollama",
+          "keywords": [
+            "ollama",
+            "local-llm"
+          ]
+        },
         {
           "name": "Docker",
           "keywords": [
             "docker"
-          ]
-        },
-        {
-          "name": "Kubernetes",
-          "keywords": [
-            "kubernetes",
-            "k8s"
-          ]
-        },
-        {
-          "name": "AWS",
-          "keywords": [
-            "aws"
-          ]
-        },
-        {
-          "name": "Git",
-          "keywords": [
-            "git"
           ]
         }
       ]
@@ -368,11 +405,18 @@
     "pin": []
   },
   "_comment_trophies": "Certifications & awards are facts only you hold — declare them here. Live-derived trophies (stars, followers, streak milestones) are added automatically.",
-  "trophies": [],
+  "trophies": [
+    {
+      "title": "NVIDIA GEN AI/LLM",
+      "issuer": "NVIDIA CERTIFIED ASSOC",
+      "year": "",
+      "url": ""
+    }
+  ],
   "goals": [
-    "SHIP ONE OPEN-SOURCE RELEASE A QUARTER",
-    "GO DEEPER ON DISTRIBUTED SYSTEMS",
-    "MENTOR TWO ENGINEERS TO THEIR FIRST PR"
+    "OWN A FEATURE END TO END: MODEL, BACKEND, TESTS",
+    "SHIP PIPELINES WITH FALLBACKS, NOT NOTEBOOK DEMOS",
+    "KEEP EVERY PROJECT HONEST WITH AUTOMATED TESTS"
   ],
   "render": {
     "cacheBust": true,
