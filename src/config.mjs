@@ -60,6 +60,17 @@ export async function loadConfig(root) {
     },
     bowling: groups(raw.bowling, 'bowling', 'deliveries'),
     kit: groups(raw.kit, 'kit', 'items'),
+    // Capability areas for the batting scene, matched against repository topics.
+    // Shape differs from bowling/kit — a flat keyword list, not nested items — so it
+    // gets its own normaliser rather than being forced through groups().
+    specialism: arr(raw.specialism)
+      .map((s, i) => {
+        const keywords = arr(s.keywords).map(str).filter(Boolean);
+        if (!str(s.area)) throw new ConfigError(`config.json → specialism[${i}] has no "area".`);
+        if (!keywords.length) throw new ConfigError(`config.json → specialism[${i}] ("${s.area}") has no "keywords".`);
+        return { area: str(s.area), shot: str(s.shot), keywords };
+      })
+      .filter(Boolean),
     fixtures: {
       mode: raw.fixtures?.mode === 'manual' ? 'manual' : 'auto',
       count: clampInt(raw.fixtures?.count, 1, 8, 4),

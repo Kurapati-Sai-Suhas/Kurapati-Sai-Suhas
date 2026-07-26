@@ -250,6 +250,46 @@
       ]
     }
   ],
+  "_comment_specialism": "Capability areas for the batting scene. Language bytes measure volume, not specialism: a Django+React project is mostly JS/TS by byte count even when the real work is a BiLSTM. These areas are evidenced from repository TOPICS instead, so what you build is what shows. Order here is display order; weight is measured, not declared.",
+
+  "specialism": [
+    {
+      "area": "LLM & RAG",
+      "shot": "COVER DRIVE",
+      "keywords": ["llm", "rag", "llama", "nvidia-nim", "llm-fallback", "genai", "generative-ai", "groq", "gemini", "ollama", "langchain", "embeddings", "chromadb", "vector-database", "prompt-engineering", "retrieval"]
+    },
+    {
+      "area": "COMPUTER VISION",
+      "shot": "PULL SHOT",
+      "keywords": ["computer-vision", "mediapipe", "blazepose", "pose-estimation", "opencv", "yolo", "image-processing", "object-detection"]
+    },
+    {
+      "area": "DEEP LEARNING",
+      "shot": "STRAIGHT DRIVE",
+      "keywords": ["bilstm", "lstm", "tcn", "keras", "tensorflow", "pytorch", "transformers", "attention", "neural-network", "sequence-model"]
+    },
+    {
+      "area": "MODEL RIGOUR",
+      "shot": "LATE CUT",
+      "keywords": ["monte-carlo-dropout", "uncertainty-quantification", "explainable-ai", "cross-validation", "ablation-study", "evaluation", "expected-gradients", "interpretability"]
+    },
+    {
+      "area": "ADAPTIVE SYSTEMS",
+      "shot": "LEG GLANCE",
+      "keywords": ["elo-rating", "spaced-repetition", "recommendation-system", "adaptive-learning", "curriculum", "fsrs", "leitner"]
+    },
+    {
+      "area": "PRODUCTION BACKEND",
+      "shot": "LOFTED SIX",
+      "keywords": ["django", "django-rest-framework", "celery", "redis", "postgresql", "docker", "fastapi", "api"]
+    },
+    {
+      "area": "REGULATED SYSTEMS",
+      "shot": "DEFENSIVE BLOCK",
+      "keywords": ["21-cfr-part-11", "gxp", "compliance", "electronic-signature", "audit-log", "rbac", "validation", "traceability"]
+    }
+  ],
+
   "_comment_kit": "Your declared stack. `usedIn` counts are derived live from your repositories.",
   "kit": [
     {

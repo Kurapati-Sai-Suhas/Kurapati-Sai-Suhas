@@ -224,6 +224,52 @@ export function buildMetrics(raw, config) {
       runs: Math.round(bytes / 1024),
     }));
 
+  // --- specialism: capability areas evidenced by repository topics -----------
+  //
+  // Language bytes are a volume measure, not a specialism measure. A Django + React
+  // project is overwhelmingly JS/TS by byte count even when the substance of it is a
+  // BiLSTM with uncertainty quantification, so a byte-share chart reports "web
+  // developer" for an ML engineer. Topics are the one place the substance is stated, so
+  // that is what this measures.
+  //
+  // WEIGHT is the count of DISTINCT matched topics — breadth of evidenced capability.
+  // Deliberately not commit count: commits track how long a repo has been worked on, not
+  // what it demonstrates, and a 70-commit repo with no topics evidences nothing at all.
+  // That is a feature: it makes untagged work visibly absent rather than silently
+  // credited, which is the only honest way to report metadata-derived skill.
+  const topicIndex = new Map(); // topic -> Set(repo name)
+  for (const r of repos) {
+    for (const t of (r.repositoryTopics?.nodes ?? []).map((x) => x.topic.name.toLowerCase())) {
+      if (!topicIndex.has(t)) topicIndex.set(t, new Set());
+      topicIndex.get(t).add(r.name);
+    }
+  }
+
+  const specialism = (config.specialism ?? []).map((area) => {
+    const matched = area.keywords.map((k) => k.toLowerCase()).filter((k) => topicIndex.has(k));
+    const areaRepos = new Set(matched.flatMap((k) => [...topicIndex.get(k)]));
+    const areaCommits = sum(
+      repos.filter((r) => areaRepos.has(r.name)),
+      ownCommits,
+    );
+    return {
+      area: area.area,
+      shot: area.shot ?? '',
+      weight: matched.length,
+      topics: matched,
+      repos: areaRepos.size,
+      repoNames: [...areaRepos],
+      commits: areaCommits,
+    };
+  });
+
+  const specialismTotal = sum(specialism, (s) => s.weight);
+  for (const s of specialism) s.share = pct(s.weight, specialismTotal);
+
+  // Repositories carrying no topics at all: they cannot contribute to any area, and
+  // surfacing the count is what tells you the chart is under-reporting.
+  const untagged = repos.filter((r) => (r.repositoryTopics?.nodes ?? []).length === 0);
+
   // --- bowling arsenal (config-declared tech, live-verified usage) -----------
   const arsenal = (config.bowling ?? []).map((group) => {
     const deliveries = group.deliveries
@@ -343,6 +389,15 @@ export function buildMetrics(raw, config) {
     fielding: { catches: bowling.catches, runOuts: bowling.maidens },
     streak: { current: currentStreak, longest: longestStreak },
     languages,
+    specialism,
+    coverage: {
+      // How much of your work is actually visible to a metadata-driven chart.
+      taggedRepos: repos.length - untagged.length,
+      totalRepos: repos.length,
+      untagged: untagged
+        .map((r) => ({ name: r.name, commits: ownCommits(r), stars: r.stargazerCount }))
+        .sort((a, b) => b.commits - a.commits),
+    },
     arsenal,
     kit,
     fixtures,

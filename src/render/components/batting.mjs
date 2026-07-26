@@ -43,23 +43,38 @@ export const file = 'batting.svg';
 /** Canvas grows with the language count so a focused profile has no dead space. */
 const heightFor = (count) => Math.max(300, LIST_TOP + Math.max(count, 3) * ROW_H + 44);
 
-/** Stroke names in descending prominence — rank 1 gets the signature shot. */
-const SHOTS = ['COVER DRIVE', 'STRAIGHT DRIVE', 'PULL SHOT', 'SQUARE CUT', 'LEG GLANCE', 'LOFTED SIX'];
-
-/** Fallback palette when GitHub reports no colour for a language. */
+/** Sector palette for capability areas. */
 const FALLBACK = [C.gold, C.sky, C.saffron, C.greenBright, C.royalBright, C.white];
 
+/** Used for the language footer when the transport supplies no GitHub language colours. */
+const LANG_FALLBACK = [C.sky, C.gold, C.saffron, C.greenBright, C.royalBright, C.white];
+
 export function render(m) {
+  // The wheel plots SPECIALISM (capability areas evidenced by topics), not language
+  // bytes. See metrics.mjs for why: bytes measure volume, and a Django + React project
+  // reads as "web developer" by volume however much ML sits inside it.
+  const areas = (m.specialism ?? []).filter((s) => s.weight > 0);
   const langs = m.languages;
-  const H = heightFor(langs.length);
+  const H = heightFor(Math.max(areas.length, 3));
 
   let body = rect(0, 0, W, H, C.nightDeep);
   body += panel(10, 10, W - 20, H - 20, { fill: C.panel });
 
   body += rect(24, 24, W - 48, 26, C.navySoft);
   body += rect(24, 24, 4, 26, C.gold);
-  body += pxText('BATTING — SHOT SELECTION', { x: 40, y: 32, scale: 1.7, fill: C.gold });
-  body += label('LANGUAGE SHARE BY SOURCE BYTES', { x: W - 34, y: 42, size: 10, fill: C.muteDim, anchor: 'end', spacing: 1.4 });
+  body += pxText('BATTING — SCORING AREAS', { x: 40, y: 32, scale: 1.7, fill: C.gold });
+  body += label('EVIDENCED BY REPOSITORY TOPICS', { x: W - 34, y: 42, size: 10, fill: C.muteDim, anchor: 'end', spacing: 1.4 });
+
+  if (!areas.length) {
+    body += label('NO TAGGED CAPABILITIES YET — ADD TOPICS TO YOUR REPOSITORIES.', {
+      x: W / 2,
+      y: H / 2,
+      size: 12,
+      fill: C.muteDim,
+      anchor: 'middle',
+    });
+    return wrap(body, m, '', H);
+  }
 
   if (!langs.length) {
     body += label('NO PUBLIC SOURCE INDEXED YET — THE OPENERS ARE STILL PADDING UP.', {
@@ -69,12 +84,12 @@ export function render(m) {
       fill: C.muteDim,
       anchor: 'middle',
     });
-    return wrap(body, m, '');
+    return wrap(body, m, '', H);
   }
 
   // ------------------------------------------------------- wagon wheel ------
   const cx = 152;
-  const cy = LIST_TOP + Math.max(langs.length, 3) * ROW_H * 0.5 + 24;
+  const cy = LIST_TOP + Math.max(areas.length, 3) * ROW_H * 0.5 + 24;
   const R = 104;
 
   // Ground: outfield, boundary rope, 30-yard circle.
@@ -82,16 +97,16 @@ export function render(m) {
   body += `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${C.crease}" stroke-width="1.5" opacity=".35"/>`;
   body += `<circle cx="${cx}" cy="${cy}" r="${R * 0.58}" fill="none" stroke="${C.crease}" stroke-width="1" opacity=".16" stroke-dasharray="4 6"/>`;
 
-  const total = langs.reduce((a, l) => a + l.share, 0) || 1;
+  const total = areas.reduce((a, s) => a + s.share, 0) || 1;
 
   // Sector wedges, drawn under the strokes: the arc IS the share, readable at a glance
   // even before a single stroke is followed.
   const SPAN = 310; // degrees of playable field; the gap sits behind the keeper
   const START = -245;
   let cursor = START;
-  const sectors = langs.map((l, i) => {
-    const deg = (SPAN * l.share) / total;
-    const s = { l, i, from: cursor, to: cursor + deg, col: l.color || FALLBACK[i % FALLBACK.length] };
+  const sectors = areas.map((a, i) => {
+    const deg = (SPAN * a.share) / total;
+    const s = { l: a, i, from: cursor, to: cursor + deg, col: FALLBACK[i % FALLBACK.length] };
     cursor += deg;
     return s;
   });
@@ -103,8 +118,8 @@ export function render(m) {
   // Strokes, dealt in proportion to share.
   for (const s of sectors) {
     const count = Math.max(1, Math.round((s.l.share / total) * STROKES));
-    // Seeded from the language name: same language, same fan, every build.
-    const rand = rng(seedOf(s.l.name));
+    // Seeded from the area name: same area, same fan, every build.
+    const rand = rng(seedOf(s.l.area));
     const arc = s.to - s.from;
 
     for (let k = 0; k < count; k++) {
@@ -153,18 +168,20 @@ export function render(m) {
   const rowH = ROW_H;
   const top = LIST_TOP;
 
-  langs.forEach((l, i) => {
+  const peakWeight = Math.max(...areas.map((a) => a.weight));
+
+  areas.forEach((a, i) => {
     const y = top + i * rowH;
-    const col = l.color || FALLBACK[i % FALLBACK.length];
+    const col = FALLBACK[i % FALLBACK.length];
     body += `<g class="${P}-row" style="animation-delay:${(i * 0.07).toFixed(2)}s">`;
     if (i % 2 === 0) body += rect(lx - 8, y - 6, lw + 16, rowH - 6, C.navy, ' opacity=".5"');
 
     body += rect(lx, y + 2, 8, 8, col);
-    body += pxText(trunc(l.name, 12), { x: lx + 18, y: y + 1, scale: 1.9, fill: C.white });
-    body += label(SHOTS[i] ?? 'IMPROVISED', { x: lx + 18, y: y + 26, size: 9, fill: C.muteDim, spacing: 1.4 });
+    body += pxText(trunc(a.area, 18), { x: lx + 18, y: y + 1, scale: 1.6, fill: C.white });
+    body += label(a.shot || 'IMPROVISED', { x: lx + 18, y: y + 26, size: 9, fill: C.muteDim, spacing: 1.4 });
 
-    // Meter
-    // Meter stops short of the percentage column on the right edge.
+    // Meter is scaled to the strongest area, so the leader always fills the bar and the
+    // rest read as a proportion of it.
     const mx = lx + 190;
     const mw = 276;
     body += meter({
@@ -172,24 +189,58 @@ export function render(m) {
       y: y + 2,
       w: mw,
       h: 10,
-      pct: l.share,
+      pct: (a.weight / peakWeight) * 100,
       cells: 24,
       on: col,
       off: C.lineSoft,
       anim: `${P}-cell`,
     });
-    body += label(`${fmt(l.runs)} KB · ${l.repos} MATCH${l.repos === 1 ? '' : 'ES'}`, {
+    body += label(`${a.weight} SIGNAL${a.weight === 1 ? '' : 'S'} · ${a.repos} MATCH${a.repos === 1 ? '' : 'ES'} · ${fmt(a.commits)} RUNS`, {
       x: mx,
       y: y + 26,
       size: 9,
       fill: C.muteDim,
     });
 
-    body += pxText(`${l.share}%`, { x: W - 34, y: y, scale: 2.1, fill: col, anchor: 'end' });
+    body += pxText(`${a.share}%`, { x: W - 34, y: y, scale: 2.1, fill: col, anchor: 'end' });
     body += `</g>`;
   });
 
-  return wrap(body, m, '');
+  // ------------------------------------------------- language footer --------
+  // Languages still matter, they just are not the headline. One compact stacked bar.
+  const fy = top + areas.length * rowH + 8;
+  body += rect(lx, fy, lw, 1, C.line);
+  body += label('SOURCE BYTES', { x: lx, y: fy + 16, size: 8, fill: C.muteDim, spacing: 1.6 });
+
+  let bx = lx;
+  const barY = fy + 22;
+  const barW = lw;
+  langs.forEach((l, i) => {
+    const seg = (l.share / 100) * barW;
+    const col = l.color || LANG_FALLBACK[i % LANG_FALLBACK.length];
+    body += rect(bx, barY, Math.max(1, seg - 1), 9, col, ` class="${P}-cell" style="animation-delay:${(i * 0.06).toFixed(2)}s"`);
+    bx += seg;
+  });
+
+  let tx = lx;
+  langs.forEach((l, i) => {
+    const col = l.color || LANG_FALLBACK[i % LANG_FALLBACK.length];
+    body += rect(tx, barY + 15, 6, 6, col);
+    body += label(`${l.name} ${l.share}%`, { x: tx + 10, y: barY + 21, size: 9, fill: C.mute });
+    tx += String(`${l.name} ${l.share}%`).length * 5.4 + 24;
+  });
+
+  // Coverage note: the chart can only see tagged repositories, so say how many it cannot.
+  if (m.coverage && m.coverage.untagged.length) {
+    const biggest = m.coverage.untagged[0];
+    body += label(
+      `${m.coverage.untagged.length} REPO${m.coverage.untagged.length === 1 ? '' : 'S'} UNTAGGED AND UNCOUNTED` +
+        (biggest.commits > 0 ? ` — LARGEST: ${biggest.name.toUpperCase()} (${biggest.commits} RUNS)` : ''),
+      { x: lx, y: barY + 38, size: 8, fill: C.saffron, spacing: 0.8 },
+    );
+  }
+
+  return wrap(body, m, '', H);
 }
 
 /** SVG arc path for one sector wedge, centre -> arc -> centre. */
@@ -214,17 +265,20 @@ function seedOf(name) {
   return h >>> 0;
 }
 
-function wrap(body, m, defs) {
-  const top = m.languages[0];
-  const H = heightFor(m.languages.length);
+function wrap(body, m, defs, H) {
+  const areas = (m.specialism ?? []).filter((s) => s.weight > 0);
+  const lead = areas[0];
   return svg({
     w: W,
     h: H,
-    title: 'Batting — language shot selection',
-    desc: top
-      ? `Top language ${top.name} at ${top.share}% of source bytes across ${top.repos} repositories. ` +
-        m.languages.map((l) => `${l.name} ${l.share}%`).join(', ') + '.'
-      : 'No indexed languages yet.',
+    title: 'Batting — scoring areas by capability',
+    desc: lead
+      ? `Strongest area ${lead.area} with ${lead.weight} evidenced topics across ${lead.repos} repositories. ` +
+        areas.map((a) => `${a.area} ${a.share}%`).join(', ') +
+        '. Source bytes: ' +
+        m.languages.map((l) => `${l.name} ${l.share}%`).join(', ') +
+        '.'
+      : 'No tagged capabilities yet.',
     defs,
     css:
       baseCss(P) +

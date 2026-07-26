@@ -88,6 +88,162 @@
       "runs": 774
     }
   ],
+  "specialism": [
+    {
+      "area": "LLM & RAG",
+      "shot": "COVER DRIVE",
+      "weight": 3,
+      "topics": [
+        "llama",
+        "nvidia-nim",
+        "llm-fallback"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "GxP-Training-Bot"
+      ],
+      "commits": 6,
+      "share": 14.3
+    },
+    {
+      "area": "COMPUTER VISION",
+      "shot": "PULL SHOT",
+      "weight": 4,
+      "topics": [
+        "computer-vision",
+        "mediapipe",
+        "blazepose",
+        "pose-estimation"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "Suhasvision"
+      ],
+      "commits": 4,
+      "share": 19
+    },
+    {
+      "area": "DEEP LEARNING",
+      "shot": "STRAIGHT DRIVE",
+      "weight": 2,
+      "topics": [
+        "bilstm",
+        "keras"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "Suhasvision"
+      ],
+      "commits": 4,
+      "share": 9.5
+    },
+    {
+      "area": "MODEL RIGOUR",
+      "shot": "LATE CUT",
+      "weight": 3,
+      "topics": [
+        "monte-carlo-dropout",
+        "explainable-ai",
+        "cross-validation"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "Suhasvision"
+      ],
+      "commits": 4,
+      "share": 14.3
+    },
+    {
+      "area": "ADAPTIVE SYSTEMS",
+      "shot": "LEG GLANCE",
+      "weight": 1,
+      "topics": [
+        "elo-rating"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "GxP-Training-Bot"
+      ],
+      "commits": 6,
+      "share": 4.8
+    },
+    {
+      "area": "PRODUCTION BACKEND",
+      "shot": "LOFTED SIX",
+      "weight": 3,
+      "topics": [
+        "django",
+        "django-rest-framework",
+        "celery"
+      ],
+      "repos": 2,
+      "repoNames": [
+        "GxP-Training-Bot",
+        "Suhasvision"
+      ],
+      "commits": 10,
+      "share": 14.3
+    },
+    {
+      "area": "REGULATED SYSTEMS",
+      "shot": "DEFENSIVE BLOCK",
+      "weight": 5,
+      "topics": [
+        "21-cfr-part-11",
+        "gxp",
+        "compliance",
+        "electronic-signature",
+        "audit-log"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "GxP-Training-Bot"
+      ],
+      "commits": 6,
+      "share": 23.8
+    }
+  ],
+  "coverage": {
+    "taggedRepos": 2,
+    "totalRepos": 9,
+    "untagged": [
+      {
+        "name": "SparkLM",
+        "commits": 70,
+        "stars": 1
+      },
+      {
+        "name": "Kurapati-Sai-Suhas",
+        "commits": 5,
+        "stars": 0
+      },
+      {
+        "name": "cricket-profile-readme",
+        "commits": 5,
+        "stars": 0
+      },
+      {
+        "name": "Mail-Mind-Ai",
+        "commits": 1,
+        "stars": 0
+      },
+      {
+        "name": "Crop-Recommendation-website",
+        "commits": 1,
+        "stars": 0
+      },
+      {
+        "name": "travel-ai-planner",
+        "commits": 1,
+        "stars": 0
+      },
+      {
+        "name": "data-analysis-on-coffee-and-titanic-data-sets",
+        "commits": 1,
+        "stars": 0
+      }
+    ]
+  },
   "arsenal": [
     {
       "category": "AI / LLM",
