@@ -256,17 +256,17 @@
     {
       "area": "LLM & RAG",
       "shot": "COVER DRIVE",
-      "keywords": ["llm", "rag", "llama", "nvidia-nim", "llm-fallback", "genai", "generative-ai", "groq", "gemini", "ollama", "langchain", "embeddings", "chromadb", "vector-database", "prompt-engineering", "retrieval"]
+      "keywords": ["llm", "rag", "llama", "nvidia-nim", "llm-fallback", "genai", "generative-ai", "groq", "gemini", "ollama", "langchain", "embeddings", "chromadb", "vector-database", "pgvector", "prompt-engineering", "retrieval"]
     },
     {
       "area": "COMPUTER VISION",
       "shot": "PULL SHOT",
-      "keywords": ["computer-vision", "mediapipe", "blazepose", "pose-estimation", "opencv", "yolo", "image-processing", "object-detection"]
+      "keywords": ["computer-vision", "mediapipe", "blazepose", "pose-estimation", "clip", "opencv", "yolo", "image-processing", "object-detection"]
     },
     {
       "area": "DEEP LEARNING",
       "shot": "STRAIGHT DRIVE",
-      "keywords": ["bilstm", "lstm", "tcn", "keras", "tensorflow", "pytorch", "transformers", "attention", "neural-network", "sequence-model"]
+      "keywords": ["bilstm", "lstm", "tcn", "keras", "tensorflow", "pytorch", "transformers", "attention", "neural-network", "sequence-model", "graphical-neural-networks", "gnn", "machine-learning", "random-forest"]
     },
     {
       "area": "MODEL RIGOUR",
@@ -281,12 +281,17 @@
     {
       "area": "PRODUCTION BACKEND",
       "shot": "LOFTED SIX",
-      "keywords": ["django", "django-rest-framework", "celery", "redis", "postgresql", "docker", "fastapi", "api"]
+      "keywords": ["django", "django-rest-framework", "celery", "redis", "postgresql", "docker", "fastapi", "api", "oauth2", "code-execution", "judge0", "sandbox"]
     },
     {
       "area": "REGULATED SYSTEMS",
       "shot": "DEFENSIVE BLOCK",
       "keywords": ["21-cfr-part-11", "gxp", "compliance", "electronic-signature", "audit-log", "rbac", "validation", "traceability"]
+    },
+    {
+      "area": "REAL-TIME & COLLAB",
+      "shot": "QUICK SINGLE",
+      "keywords": ["crdt", "websocket", "django-channels", "channels", "realtime", "collaborative", "pubsub"]
     }
   ],
 

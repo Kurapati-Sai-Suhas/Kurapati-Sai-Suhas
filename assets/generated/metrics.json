@@ -92,50 +92,59 @@
     {
       "area": "LLM & RAG",
       "shot": "COVER DRIVE",
-      "weight": 3,
+      "weight": 6,
       "topics": [
+        "llm",
+        "rag",
         "llama",
         "nvidia-nim",
-        "llm-fallback"
+        "llm-fallback",
+        "pgvector"
       ],
-      "repos": 1,
+      "repos": 2,
       "repoNames": [
+        "SparkLM",
         "GxP-Training-Bot"
       ],
-      "commits": 6,
-      "share": 14.3
+      "commits": 76,
+      "share": 17.6
     },
     {
       "area": "COMPUTER VISION",
       "shot": "PULL SHOT",
-      "weight": 4,
+      "weight": 5,
       "topics": [
         "computer-vision",
         "mediapipe",
         "blazepose",
-        "pose-estimation"
+        "pose-estimation",
+        "clip"
       ],
-      "repos": 1,
+      "repos": 2,
       "repoNames": [
+        "SparkLM",
         "Suhasvision"
       ],
-      "commits": 4,
-      "share": 19
+      "commits": 74,
+      "share": 14.7
     },
     {
       "area": "DEEP LEARNING",
       "shot": "STRAIGHT DRIVE",
-      "weight": 2,
+      "weight": 4,
       "topics": [
         "bilstm",
-        "keras"
+        "keras",
+        "graphical-neural-networks",
+        "machine-learning"
       ],
-      "repos": 1,
+      "repos": 2,
       "repoNames": [
-        "Suhasvision"
+        "Suhasvision",
+        "SparkLM"
       ],
-      "commits": 4,
-      "share": 9.5
+      "commits": 74,
+      "share": 11.8
     },
     {
       "area": "MODEL RIGOUR",
@@ -146,43 +155,50 @@
         "explainable-ai",
         "cross-validation"
       ],
-      "repos": 1,
+      "repos": 2,
       "repoNames": [
-        "Suhasvision"
+        "Suhasvision",
+        "SparkLM"
       ],
-      "commits": 4,
-      "share": 14.3
+      "commits": 74,
+      "share": 8.8
     },
     {
       "area": "ADAPTIVE SYSTEMS",
       "shot": "LEG GLANCE",
-      "weight": 1,
+      "weight": 2,
       "topics": [
-        "elo-rating"
-      ],
-      "repos": 1,
-      "repoNames": [
-        "GxP-Training-Bot"
-      ],
-      "commits": 6,
-      "share": 4.8
-    },
-    {
-      "area": "PRODUCTION BACKEND",
-      "shot": "LOFTED SIX",
-      "weight": 3,
-      "topics": [
-        "django",
-        "django-rest-framework",
-        "celery"
+        "elo-rating",
+        "spaced-repetition"
       ],
       "repos": 2,
       "repoNames": [
         "GxP-Training-Bot",
+        "SparkLM"
+      ],
+      "commits": 76,
+      "share": 5.9
+    },
+    {
+      "area": "PRODUCTION BACKEND",
+      "shot": "LOFTED SIX",
+      "weight": 6,
+      "topics": [
+        "django",
+        "django-rest-framework",
+        "celery",
+        "redis",
+        "oauth2",
+        "code-execution"
+      ],
+      "repos": 3,
+      "repoNames": [
+        "GxP-Training-Bot",
+        "SparkLM",
         "Suhasvision"
       ],
-      "commits": 10,
-      "share": 14.3
+      "commits": 80,
+      "share": 17.6
     },
     {
       "area": "REGULATED SYSTEMS",
@@ -200,18 +216,29 @@
         "GxP-Training-Bot"
       ],
       "commits": 6,
-      "share": 23.8
+      "share": 14.7
+    },
+    {
+      "area": "REAL-TIME & COLLAB",
+      "shot": "QUICK SINGLE",
+      "weight": 3,
+      "topics": [
+        "crdt",
+        "websocket",
+        "django-channels"
+      ],
+      "repos": 1,
+      "repoNames": [
+        "SparkLM"
+      ],
+      "commits": 70,
+      "share": 8.8
     }
   ],
   "coverage": {
-    "taggedRepos": 2,
+    "taggedRepos": 3,
     "totalRepos": 9,
     "untagged": [
-      {
-        "name": "SparkLM",
-        "commits": 70,
-        "stars": 1
-      },
       {
         "name": "Kurapati-Sai-Suhas",
         "commits": 5,
@@ -250,11 +277,19 @@
       "deliveries": [
         {
           "name": "LLM / RAG",
-          "wickets": 1,
-          "overs": 6,
-          "stars": 0,
+          "wickets": 2,
+          "overs": 76,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 160
+        },
+        {
+          "name": "Groq/Gemini",
+          "wickets": 1,
+          "overs": 70,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 158
         },
         {
           "name": "NVIDIA NIM",
@@ -262,7 +297,7 @@
           "overs": 6,
           "stars": 0,
           "lastUsed": "2026-07-26T07:49:59Z",
-          "pace": 160
+          "pace": 130
         },
         {
           "name": "Transformers",
@@ -270,15 +305,7 @@
           "overs": 4,
           "stars": 0,
           "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 152
-        },
-        {
-          "name": "Groq/Gemini",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "pace": 128
         },
         {
           "name": "Embeddings",
@@ -294,12 +321,20 @@
       "category": "VISION / MODELS",
       "deliveries": [
         {
+          "name": "OpenCV",
+          "wickets": 2,
+          "overs": 74,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 160
+        },
+        {
           "name": "TensorFlow",
           "wickets": 1,
           "overs": 4,
           "stars": 0,
           "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 160
+          "pace": 128
         },
         {
           "name": "MediaPipe",
@@ -307,15 +342,7 @@
           "overs": 4,
           "stars": 0,
           "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 160
-        },
-        {
-          "name": "OpenCV",
-          "wickets": 1,
-          "overs": 4,
-          "stars": 0,
-          "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 160
+          "pace": 128
         },
         {
           "name": "PyTorch",
@@ -356,33 +383,49 @@
         },
         {
           "name": "Django REST",
-          "wickets": 2,
-          "overs": 10,
-          "stars": 0,
+          "wickets": 3,
+          "overs": 80,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
-          "pace": 132
+          "pace": 157
         },
         {
           "name": "Celery/Redis",
-          "wickets": 1,
-          "overs": 6,
-          "stars": 0,
+          "wickets": 2,
+          "overs": 76,
+          "stars": 1,
           "lastUsed": "2026-07-26T07:49:59Z",
-          "pace": 129
+          "pace": 156
         },
         {
           "name": "PostgreSQL",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
+          "wickets": 1,
+          "overs": 70,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 155
         }
       ]
     },
     {
       "category": "PRODUCTION",
       "deliveries": [
+        {
+          "name": "CI / Tests",
+          "wickets": 1,
+          "overs": 70,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 160
+        },
+        {
+          "name": "Sandboxing",
+          "wickets": 1,
+          "overs": 70,
+          "stars": 1,
+          "lastUsed": "2026-07-23T04:36:49Z",
+          "pace": 160
+        },
         {
           "name": "Linux",
           "wickets": 1,
@@ -406,22 +449,6 @@
           "stars": 0,
           "lastUsed": "2026-07-26T07:49:59Z",
           "pace": 130
-        },
-        {
-          "name": "CI / Tests",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
-        },
-        {
-          "name": "Sandboxing",
-          "wickets": 0,
-          "overs": 0,
-          "stars": 0,
-          "lastUsed": null,
-          "pace": 118
         }
       ]
     }
@@ -448,8 +475,8 @@
         },
         {
           "name": "SQL",
-          "usedIn": 0,
-          "commits": 0
+          "usedIn": 1,
+          "commits": 70
         },
         {
           "name": "C++",
@@ -464,18 +491,18 @@
       "items": [
         {
           "name": "Django REST",
-          "usedIn": 2,
-          "commits": 10
+          "usedIn": 3,
+          "commits": 80
         },
         {
           "name": "React",
-          "usedIn": 2,
-          "commits": 10
+          "usedIn": 3,
+          "commits": 80
         },
         {
           "name": "Celery",
-          "usedIn": 1,
-          "commits": 6
+          "usedIn": 2,
+          "commits": 76
         },
         {
           "name": "FastAPI",
@@ -490,16 +517,16 @@
       "items": [
         {
           "name": "PostgreSQL",
-          "usedIn": 0,
-          "commits": 0
-        },
-        {
-          "name": "ChromaDB",
-          "usedIn": 0,
-          "commits": 0
+          "usedIn": 1,
+          "commits": 70
         },
         {
           "name": "Redis",
+          "usedIn": 1,
+          "commits": 70
+        },
+        {
+          "name": "ChromaDB",
           "usedIn": 0,
           "commits": 0
         },
@@ -540,7 +567,7 @@
   "fixtures": [
     {
       "name": "SparkLM",
-      "description": "Adaptive coding practice powered by Elo, spaced repetition, and explainable AI routing.",
+      "description": "Adaptive coding-practice platform (Django/DRF/Channels, PostgreSQL/pgvector) with Elo skill modeling, a prerequisite curriculum DAG, spaced-repetition scheduling, a hybrid ML routing engine (RandomForest + runs-test), and sandboxed Judge0 execution; 104-test suite. Groq/Gemini power separate content-generation and coaching features, not routing.",
       "url": "https://github.com/Kurapati-Sai-Suhas/SparkLM",
       "homepage": "https://spark-lm-3y3e.vercel.app",
       "stars": 1,
@@ -549,9 +576,14 @@
       "commits": 70,
       "language": "TypeScript",
       "languageColor": null,
-      "topics": [],
+      "topics": [
+        "clip",
+        "code-execution",
+        "computer-vision",
+        "crdt"
+      ],
       "pushedAt": "2026-07-23T04:36:49Z",
-      "daysSincePush": 3,
+      "daysSincePush": 4,
       "releases": 0,
       "archived": false
     },
