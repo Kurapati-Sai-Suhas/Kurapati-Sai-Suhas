@@ -86,10 +86,31 @@ async function rest(path) {
  * @returns {Promise<object>} raw payload (cached verbatim)
  */
 export async function fetchAll(login) {
-  // No token: fall back to the public transport rather than failing. Still real data —
-  // just the subset GitHub exposes anonymously. See rest.mjs for what that costs.
+  // No token: use the public transport rather than failing. Still real data — just the
+  // subset GitHub exposes anonymously. See rest.mjs for what that costs.
   if (!token()) return fetchAllPublic(login);
 
+  try {
+    return await fetchAllGraphQL(login);
+  } catch (err) {
+    // A token can be present and still not work: Actions' GITHUB_TOKEN is an
+    // installation token with a narrower grant than a PAT, org SSO can be unauthorised,
+    // and fine-grained tokens routinely lack `read:user`. None of those are worth a red
+    // build when a complete public payload is one call away.
+    //
+    // Loud, not silent: the reason is printed, and `transport` in metrics.json records
+    // which path actually produced the numbers.
+    process.stderr.write(
+      `\n  ! authenticated GraphQL transport failed:\n    ${String(err.message).split('\n')[0]}\n` +
+        `  ! falling back to the public transport. Private contributions will not be counted.\n` +
+        `    Fix by granting the token read:user (classic) or Metadata+Contents (fine-grained).\n\n`,
+    );
+    return fetchAllPublic(login);
+  }
+}
+
+/** The authenticated path. Richer data, needs a token that can actually read a user. */
+async function fetchAllGraphQL(login) {
   process.stderr.write(`> fetching live GitHub data for @${login} (authenticated)\n`);
 
   const { user, rateLimit } = await gql(Q_PROFILE, { login });

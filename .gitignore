@@ -16,3 +16,6 @@ Thumbs.db
 
 # Local scene preview (scripts/preview.mjs). Review tool, not a deliverable.
 preview.html
+
+# CI build transcript (tee'd for failure reporting)
+build.log

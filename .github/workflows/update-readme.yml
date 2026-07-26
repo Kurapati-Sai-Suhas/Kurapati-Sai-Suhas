@@ -48,21 +48,39 @@ jobs:
 
     steps:
       - name: Check out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
 
       # No dependencies to install — the renderer is zero-dependency by design,
       # which keeps this job at roughly 20 seconds end to end.
 
+      # Output is tee'd to a file so a failure can be reported in the job summary.
+      # Actions log text is not readable through the API without a token, so a failed
+      # run would otherwise surface only as "Process completed with exit code 1".
       - name: Build README and scenes
+        id: build
         env:
           # PROFILE_TOKEN wins when present; otherwise the ephemeral job token is used.
+          # The build falls back to the public transport if neither can read a user.
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-        run: npm run build
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee build.log
+
+      - name: Report build failure
+        if: failure() && steps.build.outcome == 'failure'
+        run: |
+          {
+            echo "### Build failed"
+            echo ""
+            echo '```'
+            tail -n 60 build.log 2>/dev/null || echo "no build.log produced"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Lint generated SVGs
         run: node scripts/lint-assets.mjs
@@ -76,6 +94,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets/generated
+          rm -f build.log
           git commit -m "chore: refresh scorecard $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
