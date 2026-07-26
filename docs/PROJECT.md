@@ -56,6 +56,30 @@ therefore cannot use Press Start 2P or anything like it. `pixel-font.mjs` ships 
 bitmap font and emits glyphs as vectors, so headings are pixel-exact everywhere with
 zero network cost.
 
+### Two transports
+
+The build works with or without a token, and says which one it used.
+
+| | `graphql` (token present) | `public-rest` (no token) |
+| :-- | :-- | :-- |
+| Auth | `GITHUB_TOKEN` / `GH_TOKEN` | none |
+| Rate limit | 5,000 req/hour | **60 req/hour per IP** |
+| Contribution calendar | GraphQL `contributionCalendar` | scraped from the public profile page (exact daily counts, from the day tooltips) |
+| Private contributions | included | not visible — render as zero |
+| Language colours | from the API | not exposed by REST; scenes fall back to the theme palette |
+| Per-repo detail | every repo | top 16 by stars/recency, to stay inside the limit |
+
+Both are real data. The public transport exists so `npm run build` works the moment you
+clone, with zero setup — and it degrades **visibly** (a note on stderr, `transport` in
+`metrics.json`) rather than silently under-reporting.
+
+> **Counting your own commits.** The REST commits endpoint accepts an `author=` filter,
+> but it resolves through a search index that lags pushes and is often incomplete —
+> measured against a real account it returned 5 of 70 commits on one repository and 0 of
+> 5 on three others, while `author.login` on every one of those commits was the user.
+> `countOwnCommits()` therefore pages the commit list and matches `author.login`
+> directly. Same request cost under 100 commits, and exact.
+
 ### Two kinds of "live"
 
 | | Refresh cadence |
@@ -78,6 +102,13 @@ npm run setup -- --user your-github-username --name "YOUR NAME" --cap 404
 
 Then edit `config.json` to declare your bowling arsenal, kit bag, certifications and
 goals (see [CONFIG.md](CONFIG.md)), and build:
+
+```bash
+npm run build
+```
+
+That works with **no token at all** — it uses the public transport. Add one to raise the
+rate limit and include private contributions:
 
 ```bash
 GH_TOKEN=ghp_xxx npm run build
@@ -122,7 +153,8 @@ secret `PROFILE_TOKEN`, and the workflow prefers it automatically.
 │   │
 │   ├── github/
 │   │   ├── queries.mjs           GraphQL documents, kept as auditable strings.
-│   │   └── client.mjs            The ONLY module that touches the network.
+│   │   ├── client.mjs            Transport dispatch + GraphQL path + payload cache.
+│   │   └── rest.mjs              Token-free path: public REST + calendar scrape.
 │   │
 │   ├── data/
 │   │   ├── metrics.mjs           GitHub payload -> cricket scorecard (pure).
@@ -335,9 +367,10 @@ table in `readme.mjs` should be updated to match.
 **`config.json → github.username is not set`**
 Run `npm run setup -- --user <your-username>`. The build refuses to guess.
 
-**`No GitHub token found`**
-Set `GH_TOKEN` locally. In Actions this is provided automatically; if you see it there,
-check that the `env:` block on the build step survived an edit.
+**`GitHub rate limit reached for unauthenticated requests`**
+The public transport gets 60 requests/hour per IP, and a build spends roughly
+`10 + 3 x repos`. Either wait for the reset the message quotes, or set `GH_TOKEN` to get
+5,000/hour. In Actions this never bites — the job token is always present.
 
 **`No such GitHub user`**
 The username in `config.json` does not resolve. Check spelling and case.

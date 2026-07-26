@@ -207,8 +207,12 @@ export function buildMetrics(raw, config) {
     }
   }
   const totalBytes = [...langBytes.values()].reduce((a, b) => a + b, 0);
-  const languages = [...langBytes.entries()]
-    .sort((a, b) => b[1] - a[1])
+  const langRanked = [...langBytes.entries()].sort((a, b) => b[1] - a[1]);
+  // Drop the long tail. A language holding under 0.5% of your bytes renders as "0%",
+  // which reads as a bug rather than a fact — but never cut below three strokes, or a
+  // focused profile ends up with an empty wagon wheel.
+  const significant = langRanked.filter(([, bytes]) => pct(bytes, totalBytes) >= 0.5);
+  const languages = (significant.length >= 3 ? significant : langRanked.slice(0, 3))
     .slice(0, 6)
     .map(([name, bytes]) => ({
       name,

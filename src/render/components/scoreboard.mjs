@@ -40,7 +40,10 @@ export function render(m) {
 
   // --------------------------------------------------------- primary score --
   const scoreY = 74;
-  body += label('TOTAL', { x: 34, y: scoreY, size: 10, fill: C.muteDim, spacing: 2.5 });
+  // Labelled "RUNS / WICKETS", not "TOTAL". On a real board the second figure is wickets
+  // LOST; here it is wickets TAKEN (pull requests merged), so the label has to say so or
+  // a cricket-literate reader will misread the headline number.
+  body += label('RUNS / WICKETS', { x: 34, y: scoreY, size: 10, fill: C.muteDim, spacing: 2.5 });
 
   const scoreStr = `${fmt(runs)}/${fmt(wkts)}`;
   const scale = scoreStr.length > 10 ? 4 : 5;

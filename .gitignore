@@ -13,3 +13,6 @@ Thumbs.db
 # NOTE: assets/generated/ is intentionally NOT ignored. GitHub serves the README's
 # images straight out of the repository, so the rendered SVGs must be committed —
 # that is what the update-readme workflow pushes on every run.
+
+# Local scene preview (scripts/preview.mjs). Review tool, not a deliverable.
+preview.html

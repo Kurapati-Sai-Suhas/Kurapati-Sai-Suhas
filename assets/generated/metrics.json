@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T06:21:35.175Z",
+  "fetchedAt": "2026-07-26T06:34:51.602Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -51,7 +51,7 @@
     "average": 0,
     "strikeRate": 0,
     "catches": 0,
-    "bigSpells": 0,
+    "bigSpells": 1,
     "maidens": 0
   },
   "fielding": {
@@ -86,30 +86,6 @@
       "repos": 6,
       "color": null,
       "runs": 434
-    },
-    {
-      "name": "Java",
-      "bytes": 2667,
-      "share": 0.1,
-      "repos": 1,
-      "color": null,
-      "runs": 3
-    },
-    {
-      "name": "PowerShell",
-      "bytes": 1862,
-      "share": 0.1,
-      "repos": 2,
-      "color": null,
-      "runs": 2
-    },
-    {
-      "name": "Shell",
-      "bytes": 897,
-      "share": 0,
-      "repos": 1,
-      "color": null,
-      "runs": 1
     }
   ],
   "arsenal": [
@@ -119,7 +95,7 @@
         {
           "name": "Node.js",
           "wickets": 6,
-          "overs": 5,
+          "overs": 87,
           "stars": 1,
           "lastUsed": "2026-07-23T04:36:49Z",
           "pace": 160
@@ -127,18 +103,18 @@
         {
           "name": "Python",
           "wickets": 6,
-          "overs": 5,
+          "overs": 82,
           "stars": 1,
           "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 160
+          "pace": 159
         },
         {
           "name": "Java",
           "wickets": 1,
-          "overs": 5,
+          "overs": 70,
           "stars": 1,
           "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 160
+          "pace": 156
         },
         {
           "name": "Go",
@@ -164,7 +140,7 @@
         {
           "name": "Linux",
           "wickets": 1,
-          "overs": 5,
+          "overs": 70,
           "stars": 1,
           "lastUsed": "2026-07-23T04:36:49Z",
           "pace": 160
@@ -172,10 +148,10 @@
         {
           "name": "Docker",
           "wickets": 2,
-          "overs": 0,
+          "overs": 6,
           "stars": 0,
           "lastUsed": "2026-07-21T17:12:25Z",
-          "pace": 118
+          "pace": 130
         },
         {
           "name": "Kubernetes",
@@ -286,17 +262,17 @@
         {
           "name": "Python",
           "usedIn": 6,
-          "commits": 5
+          "commits": 82
         },
         {
           "name": "TypeScript",
           "usedIn": 2,
-          "commits": 5
+          "commits": 74
         },
         {
           "name": "Java",
           "usedIn": 1,
-          "commits": 5
+          "commits": 70
         },
         {
           "name": "C++",
@@ -398,7 +374,7 @@
       "stars": 1,
       "forks": 1,
       "watchers": 1,
-      "commits": 5,
+      "commits": 70,
       "language": "TypeScript",
       "languageColor": null,
       "topics": [],
@@ -415,7 +391,7 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 0,
+      "commits": 5,
       "language": "Python",
       "languageColor": null,
       "topics": [],
@@ -432,7 +408,7 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 0,
+      "commits": 6,
       "language": "JavaScript",
       "languageColor": null,
       "topics": [],
@@ -449,7 +425,7 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 0,
+      "commits": 4,
       "language": "JavaScript",
       "languageColor": null,
       "topics": [],

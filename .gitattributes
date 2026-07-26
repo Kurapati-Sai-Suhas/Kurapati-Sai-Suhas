@@ -1,0 +1,13 @@
+# Normalise to LF in the repository, on every platform.
+#
+# This matters more than usual here: the update-readme workflow decides whether to
+# commit by running `git status --porcelain`. If Windows checkouts wrote CRLF while the
+# Linux runner wrote LF, every scheduled run would see the whole tree as modified and
+# push an empty-but-noisy commit.
+* text=auto eol=lf
+
+# Generated assets — mark them so GitHub's language stats and diff views treat them as
+# build output rather than hand-written source.
+assets/generated/*.svg   linguist-generated=true -diff
+assets/generated/*.json  linguist-generated=true -diff
+README.md                linguist-generated=true
