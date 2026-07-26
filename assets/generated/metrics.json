@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T16:11:08.607Z",
+  "fetchedAt": "2026-07-26T16:51:32.694Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -17,8 +17,8 @@
     "gists": 0
   },
   "totals": {
-    "contributions": 135,
-    "thisYear": 130,
+    "contributions": 144,
+    "thisYear": 139,
     "stars": 1,
     "forks": 1,
     "repos": 9,
@@ -28,13 +28,13 @@
   "batting": {
     "matches": 9,
     "innings": 39,
-    "runs": 135,
+    "runs": 144,
     "privateRuns": 0,
     "notOut": 39,
-    "highest": 18,
-    "highestOn": "2026-06-17",
-    "average": 3.46,
-    "strikeRate": 23.4,
+    "highest": 21,
+    "highestOn": "2026-07-26",
+    "average": 3.69,
+    "strikeRate": 24.9,
     "centuries": 0,
     "fifties": 1,
     "fours": 0,
@@ -66,48 +66,46 @@
     {
       "name": "Python",
       "bytes": 868201,
-      "share": 35.1,
+      "share": 34.9,
       "repos": 6,
       "color": null,
       "runs": 848
     },
     {
+      "name": "JavaScript",
+      "bytes": 811659,
+      "share": 32.6,
+      "repos": 7,
+      "color": null,
+      "runs": 793
+    },
+    {
       "name": "TypeScript",
       "bytes": 805226,
-      "share": 32.6,
+      "share": 32.3,
       "repos": 2,
       "color": null,
       "runs": 786
-    },
-    {
-      "name": "JavaScript",
-      "bytes": 792719,
-      "share": 32.1,
-      "repos": 7,
-      "color": null,
-      "runs": 774
     }
   ],
   "specialism": [
     {
       "area": "LLM & RAG",
       "shot": "COVER DRIVE",
-      "weight": 6,
+      "weight": 4,
       "topics": [
         "llm",
-        "rag",
         "llama",
         "nvidia-nim",
-        "llm-fallback",
-        "pgvector"
+        "llm-fallback"
       ],
       "repos": 2,
       "repoNames": [
         "SparkLM",
         "GxP-Training-Bot"
       ],
-      "commits": 76,
-      "share": 17.6
+      "commits": 77,
+      "share": 14.3
     },
     {
       "area": "COMPUTER VISION",
@@ -125,8 +123,8 @@
         "SparkLM",
         "Suhasvision"
       ],
-      "commits": 74,
-      "share": 14.7
+      "commits": 75,
+      "share": 17.9
     },
     {
       "area": "DEEP LEARNING",
@@ -143,8 +141,8 @@
         "Suhasvision",
         "SparkLM"
       ],
-      "commits": 74,
-      "share": 11.8
+      "commits": 75,
+      "share": 14.3
     },
     {
       "area": "MODEL RIGOUR",
@@ -160,45 +158,42 @@
         "Suhasvision",
         "SparkLM"
       ],
-      "commits": 74,
-      "share": 8.8
+      "commits": 75,
+      "share": 10.7
     },
     {
       "area": "ADAPTIVE SYSTEMS",
       "shot": "LEG GLANCE",
-      "weight": 2,
+      "weight": 1,
       "topics": [
-        "elo-rating",
-        "spaced-repetition"
+        "elo-rating"
       ],
       "repos": 2,
       "repoNames": [
-        "GxP-Training-Bot",
-        "SparkLM"
+        "SparkLM",
+        "GxP-Training-Bot"
       ],
-      "commits": 76,
-      "share": 5.9
+      "commits": 77,
+      "share": 3.6
     },
     {
       "area": "PRODUCTION BACKEND",
       "shot": "LOFTED SIX",
-      "weight": 6,
+      "weight": 4,
       "topics": [
         "django",
         "django-rest-framework",
         "celery",
-        "redis",
-        "oauth2",
         "code-execution"
       ],
       "repos": 3,
       "repoNames": [
-        "GxP-Training-Bot",
         "SparkLM",
+        "GxP-Training-Bot",
         "Suhasvision"
       ],
-      "commits": 80,
-      "share": 17.6
+      "commits": 81,
+      "share": 14.3
     },
     {
       "area": "REGULATED SYSTEMS",
@@ -216,23 +211,22 @@
         "GxP-Training-Bot"
       ],
       "commits": 6,
-      "share": 14.7
+      "share": 17.9
     },
     {
       "area": "REAL-TIME & COLLAB",
       "shot": "QUICK SINGLE",
-      "weight": 3,
+      "weight": 2,
       "topics": [
         "crdt",
-        "websocket",
         "django-channels"
       ],
       "repos": 1,
       "repoNames": [
         "SparkLM"
       ],
-      "commits": 70,
-      "share": 8.8
+      "commits": 71,
+      "share": 7.1
     }
   ],
   "coverage": {
@@ -241,12 +235,12 @@
     "untagged": [
       {
         "name": "Kurapati-Sai-Suhas",
-        "commits": 5,
+        "commits": 9,
         "stars": 0
       },
       {
         "name": "cricket-profile-readme",
-        "commits": 5,
+        "commits": 9,
         "stars": 0
       },
       {
@@ -278,17 +272,17 @@
         {
           "name": "LLM / RAG",
           "wickets": 2,
-          "overs": 76,
+          "overs": 77,
           "stars": 1,
-          "lastUsed": "2026-07-26T07:49:59Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
         {
           "name": "Groq/Gemini",
           "wickets": 1,
-          "overs": 70,
+          "overs": 71,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 158
         },
         {
@@ -323,9 +317,9 @@
         {
           "name": "OpenCV",
           "wickets": 2,
-          "overs": 74,
+          "overs": 75,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
         {
@@ -368,42 +362,42 @@
         {
           "name": "React/Node",
           "wickets": 7,
-          "overs": 92,
+          "overs": 101,
           "stars": 1,
-          "lastUsed": "2026-07-26T13:58:07Z",
+          "lastUsed": "2026-07-26T16:51:21Z",
           "pace": 160
         },
         {
           "name": "Python",
           "wickets": 6,
-          "overs": 83,
+          "overs": 84,
           "stars": 1,
-          "lastUsed": "2026-07-26T07:49:59Z",
-          "pace": 158
+          "lastUsed": "2026-07-26T16:23:28Z",
+          "pace": 156
         },
         {
           "name": "Django REST",
           "wickets": 3,
-          "overs": 80,
+          "overs": 81,
           "stars": 1,
-          "lastUsed": "2026-07-26T07:49:59Z",
-          "pace": 157
-        },
-        {
-          "name": "Celery/Redis",
-          "wickets": 2,
-          "overs": 76,
-          "stars": 1,
-          "lastUsed": "2026-07-26T07:49:59Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 156
         },
         {
           "name": "PostgreSQL",
           "wickets": 1,
-          "overs": 70,
+          "overs": 71,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
-          "pace": 155
+          "lastUsed": "2026-07-26T16:23:28Z",
+          "pace": 153
+        },
+        {
+          "name": "Celery/Redis",
+          "wickets": 1,
+          "overs": 6,
+          "stars": 0,
+          "lastUsed": "2026-07-26T07:49:59Z",
+          "pace": 128
         }
       ]
     },
@@ -413,25 +407,25 @@
         {
           "name": "CI / Tests",
           "wickets": 1,
-          "overs": 70,
+          "overs": 71,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
         {
           "name": "Sandboxing",
           "wickets": 1,
-          "overs": 70,
+          "overs": 71,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
         {
           "name": "Linux",
           "wickets": 1,
-          "overs": 70,
+          "overs": 71,
           "stars": 1,
-          "lastUsed": "2026-07-23T04:36:49Z",
+          "lastUsed": "2026-07-26T16:23:28Z",
           "pace": 160
         },
         {
@@ -461,22 +455,22 @@
         {
           "name": "JavaScript",
           "usedIn": 7,
-          "commits": 92
+          "commits": 101
         },
         {
           "name": "Python",
           "usedIn": 6,
-          "commits": 83
+          "commits": 84
         },
         {
           "name": "TypeScript",
           "usedIn": 2,
-          "commits": 74
+          "commits": 75
         },
         {
           "name": "SQL",
           "usedIn": 1,
-          "commits": 70
+          "commits": 71
         },
         {
           "name": "C++",
@@ -492,17 +486,17 @@
         {
           "name": "Django REST",
           "usedIn": 3,
-          "commits": 80
+          "commits": 81
         },
         {
           "name": "React",
-          "usedIn": 3,
-          "commits": 80
+          "usedIn": 2,
+          "commits": 10
         },
         {
           "name": "Celery",
-          "usedIn": 2,
-          "commits": 76
+          "usedIn": 1,
+          "commits": 6
         },
         {
           "name": "FastAPI",
@@ -518,15 +512,15 @@
         {
           "name": "PostgreSQL",
           "usedIn": 1,
-          "commits": 70
-        },
-        {
-          "name": "Redis",
-          "usedIn": 1,
-          "commits": 70
+          "commits": 71
         },
         {
           "name": "ChromaDB",
+          "usedIn": 0,
+          "commits": 0
+        },
+        {
+          "name": "Redis",
           "usedIn": 0,
           "commits": 0
         },
@@ -573,7 +567,7 @@
       "stars": 1,
       "forks": 1,
       "watchers": 1,
-      "commits": 70,
+      "commits": 71,
       "language": "TypeScript",
       "languageColor": null,
       "topics": [
@@ -582,8 +576,8 @@
         "computer-vision",
         "crdt"
       ],
-      "pushedAt": "2026-07-23T04:36:49Z",
-      "daysSincePush": 4,
+      "pushedAt": "2026-07-26T16:23:28Z",
+      "daysSincePush": 0,
       "releases": 0,
       "archived": false
     },
@@ -595,11 +589,11 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 5,
+      "commits": 9,
       "language": "JavaScript",
       "languageColor": null,
       "topics": [],
-      "pushedAt": "2026-07-26T13:58:07Z",
+      "pushedAt": "2026-07-26T16:51:21Z",
       "daysSincePush": 0,
       "releases": 0,
       "archived": false
@@ -612,11 +606,11 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "commits": 5,
+      "commits": 9,
       "language": "JavaScript",
       "languageColor": null,
       "topics": [],
-      "pushedAt": "2026-07-26T13:55:52Z",
+      "pushedAt": "2026-07-26T16:51:17Z",
       "daysSincePush": 0,
       "releases": 0,
       "archived": false
@@ -678,7 +672,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 130,
+    "totalContributions": 139,
     "weeks": [
       {
         "contributionDays": [
@@ -946,7 +940,7 @@
           {
             "date": "2026-07-26",
             "weekday": 0,
-            "contributionCount": 12
+            "contributionCount": 21
           }
         ]
       },
@@ -2716,10 +2710,10 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-07-26T13:58:07Z",
+    "lastPush": "2026-07-26T16:51:21Z",
     "lastEventType": "PushEvent",
-    "lastEventRepo": "Kurapati-Sai-Suhas/GxP-Training-Bot",
-    "lastEventAt": "2026-07-26T07:50:00Z"
+    "lastEventRepo": "Kurapati-Sai-Suhas/Kurapati-Sai-Suhas",
+    "lastEventAt": "2026-07-26T16:51:22Z"
   },
   "topRepo": {
     "name": "SparkLM",
