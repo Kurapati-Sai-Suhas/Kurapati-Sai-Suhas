@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-27T04:03:30.414Z",
+  "fetchedAt": "2026-07-27T10:10:10.923Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -11,37 +11,37 @@
     "website": "",
     "createdAt": "2024-12-26T15:44:33Z",
     "followers": 4,
-    "following": 17,
+    "following": 18,
     "starsGiven": 5,
     "publicRepos": 9,
     "gists": 0
   },
   "totals": {
-    "contributions": 144,
-    "thisYear": 139,
+    "contributions": 146,
+    "thisYear": 141,
     "stars": 4,
     "forks": 1,
     "repos": 9,
-    "activeDays": 39,
+    "activeDays": 40,
     "years": 3
   },
   "batting": {
     "matches": 9,
-    "innings": 39,
-    "runs": 144,
+    "innings": 40,
+    "runs": 146,
     "privateRuns": 0,
-    "notOut": 39,
+    "notOut": 40,
     "highest": 21,
     "highestOn": "2026-07-26",
-    "average": 3.69,
-    "strikeRate": 24.9,
+    "average": 3.65,
+    "strikeRate": 25.3,
     "centuries": 0,
     "fifties": 1,
     "fours": 0,
     "sixes": 0,
     "debut": "2024-12-26",
     "daysSinceDebut": 578,
-    "consistency": 6.7
+    "consistency": 6.9
   },
   "bowling": {
     "overs": 0,
@@ -59,33 +59,33 @@
     "runOuts": 0
   },
   "streak": {
-    "current": 39,
-    "longest": 39
+    "current": 40,
+    "longest": 40
   },
   "languages": [
     {
       "name": "Python",
-      "bytes": 868201,
-      "share": 34.9,
+      "bytes": 1368935,
+      "share": 46.3,
       "repos": 6,
       "color": null,
-      "runs": 848
-    },
-    {
-      "name": "JavaScript",
-      "bytes": 811659,
-      "share": 32.6,
-      "repos": 7,
-      "color": null,
-      "runs": 793
+      "runs": 1337
     },
     {
       "name": "TypeScript",
-      "bytes": 805226,
-      "share": 32.3,
+      "bytes": 801037,
+      "share": 27.1,
       "repos": 2,
       "color": null,
-      "runs": 786
+      "runs": 782
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 778787,
+      "share": 26.3,
+      "repos": 7,
+      "color": null,
+      "runs": 761
     }
   ],
   "specialism": [
@@ -120,10 +120,10 @@
       ],
       "repos": 2,
       "repoNames": [
-        "SparkLM",
-        "Suhasvision"
+        "Suhasvision",
+        "SparkLM"
       ],
-      "commits": 75,
+      "commits": 77,
       "share": 17.9
     },
     {
@@ -141,7 +141,7 @@
         "Suhasvision",
         "SparkLM"
       ],
-      "commits": 75,
+      "commits": 77,
       "share": 14.3
     },
     {
@@ -158,7 +158,7 @@
         "Suhasvision",
         "SparkLM"
       ],
-      "commits": 75,
+      "commits": 77,
       "share": 10.7
     },
     {
@@ -192,7 +192,7 @@
         "GxP-Training-Bot",
         "Suhasvision"
       ],
-      "commits": 81,
+      "commits": 83,
       "share": 14.3
     },
     {
@@ -296,10 +296,10 @@
         {
           "name": "Transformers",
           "wickets": 1,
-          "overs": 4,
+          "overs": 6,
           "stars": 1,
-          "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 128
+          "lastUsed": "2026-07-27T07:41:28Z",
+          "pace": 130
         },
         {
           "name": "Embeddings",
@@ -317,26 +317,26 @@
         {
           "name": "OpenCV",
           "wickets": 2,
-          "overs": 75,
+          "overs": 77,
           "stars": 2,
-          "lastUsed": "2026-07-26T16:23:28Z",
+          "lastUsed": "2026-07-27T07:41:28Z",
           "pace": 160
         },
         {
           "name": "TensorFlow",
           "wickets": 1,
-          "overs": 4,
+          "overs": 6,
           "stars": 1,
-          "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 128
+          "lastUsed": "2026-07-27T07:41:28Z",
+          "pace": 130
         },
         {
           "name": "MediaPipe",
           "wickets": 1,
-          "overs": 4,
+          "overs": 6,
           "stars": 1,
-          "lastUsed": "2026-07-06T16:42:31Z",
-          "pace": 128
+          "lastUsed": "2026-07-27T07:41:28Z",
+          "pace": 130
         },
         {
           "name": "PyTorch",
@@ -362,25 +362,25 @@
         {
           "name": "React/Node",
           "wickets": 7,
-          "overs": 101,
+          "overs": 103,
           "stars": 3,
-          "lastUsed": "2026-07-26T19:35:38Z",
+          "lastUsed": "2026-07-27T07:41:28Z",
           "pace": 160
         },
         {
           "name": "Python",
           "wickets": 6,
-          "overs": 84,
+          "overs": 86,
           "stars": 4,
-          "lastUsed": "2026-07-26T16:23:28Z",
+          "lastUsed": "2026-07-27T07:41:28Z",
           "pace": 156
         },
         {
           "name": "Django REST",
           "wickets": 3,
-          "overs": 81,
+          "overs": 83,
           "stars": 3,
-          "lastUsed": "2026-07-26T16:23:28Z",
+          "lastUsed": "2026-07-27T07:41:28Z",
           "pace": 156
         },
         {
@@ -455,17 +455,17 @@
         {
           "name": "JavaScript",
           "usedIn": 7,
-          "commits": 101
+          "commits": 103
         },
         {
           "name": "Python",
           "usedIn": 6,
-          "commits": 84
+          "commits": 86
         },
         {
           "name": "TypeScript",
           "usedIn": 2,
-          "commits": 75
+          "commits": 77
         },
         {
           "name": "SQL",
@@ -486,12 +486,12 @@
         {
           "name": "Django REST",
           "usedIn": 3,
-          "commits": 81
+          "commits": 83
         },
         {
           "name": "React",
           "usedIn": 2,
-          "commits": 10
+          "commits": 12
         },
         {
           "name": "Celery",
@@ -538,7 +538,7 @@
         {
           "name": "TensorFlow",
           "usedIn": 1,
-          "commits": 4
+          "commits": 6
         },
         {
           "name": "PyTorch",
@@ -577,6 +577,28 @@
         "crdt"
       ],
       "pushedAt": "2026-07-26T16:23:28Z",
+      "daysSincePush": 1,
+      "releases": 0,
+      "archived": false
+    },
+    {
+      "name": "Suhasvision",
+      "description": "A Django/DRF backend runs MediaPipe BlazePose pose estimation through a Keras BiLSTM-attention model that reports Monte Carlo Dropout uncertainty and Expected Gradients attribution to score cricket batting stances, served via a React/TanStack frontend, with an academic evaluation suite (leave-one-out and grouped cross-validation, ablations).",
+      "url": "https://github.com/Kurapati-Sai-Suhas/Suhasvision",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "commits": 6,
+      "language": "Python",
+      "languageColor": null,
+      "topics": [
+        "bilstm",
+        "blazepose",
+        "computer-vision",
+        "cricket"
+      ],
+      "pushedAt": "2026-07-27T07:41:28Z",
       "daysSincePush": 0,
       "releases": 0,
       "archived": false
@@ -604,28 +626,6 @@
       "archived": false
     },
     {
-      "name": "Suhasvision",
-      "description": "A Django/DRF backend runs MediaPipe BlazePose pose estimation through a Keras BiLSTM-attention model that reports Monte Carlo Dropout uncertainty and Expected Gradients attribution to score cricket batting stances, served via a React/TanStack frontend, with an academic evaluation suite (leave-one-out and grouped cross-validation, ablations).",
-      "url": "https://github.com/Kurapati-Sai-Suhas/Suhasvision",
-      "homepage": null,
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "commits": 4,
-      "language": "JavaScript",
-      "languageColor": null,
-      "topics": [
-        "bilstm",
-        "blazepose",
-        "computer-vision",
-        "cricket"
-      ],
-      "pushedAt": "2026-07-06T16:42:31Z",
-      "daysSincePush": 20,
-      "releases": 0,
-      "archived": false
-    },
-    {
       "name": "Mail-Mind-Ai",
       "description": "",
       "url": "https://github.com/Kurapati-Sai-Suhas/Mail-Mind-Ai",
@@ -638,7 +638,7 @@
       "languageColor": null,
       "topics": [],
       "pushedAt": "2026-07-06T16:07:50Z",
-      "daysSincePush": 20,
+      "daysSincePush": 21,
       "releases": 0,
       "archived": false
     }
@@ -664,20 +664,20 @@
       "kind": "live"
     },
     {
-      "title": "39-DAY STREAK",
+      "title": "40-DAY STREAK",
       "issuer": "ENDURANCE",
       "year": "",
       "kind": "live"
     },
     {
-      "title": "TOP KNOCK: SparkLM",
+      "title": "TOP KNOCK: Suhasvision",
       "issuer": "1 STARS",
       "year": "",
       "kind": "live"
     }
   ],
   "calendar": {
-    "totalContributions": 139,
+    "totalContributions": 141,
     "weeks": [
       {
         "contributionDays": [
@@ -1293,7 +1293,7 @@
           {
             "date": "2026-07-27",
             "weekday": 1,
-            "contributionCount": 0
+            "contributionCount": 1
           },
           {
             "date": "2026-08-03",
@@ -1543,7 +1543,7 @@
           {
             "date": "2026-07-14",
             "weekday": 2,
-            "contributionCount": 1
+            "contributionCount": 2
           },
           {
             "date": "2026-07-21",
@@ -2715,14 +2715,14 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-07-26T19:35:38Z",
-    "lastEventType": "WatchEvent",
-    "lastEventRepo": "Kurapati-Sai-Suhas/Mail-Mind-Ai",
-    "lastEventAt": "2026-07-26T17:29:06Z"
+    "lastPush": "2026-07-27T07:41:28Z",
+    "lastEventType": "PushEvent",
+    "lastEventRepo": "Kurapati-Sai-Suhas/Suhasvision",
+    "lastEventAt": "2026-07-27T07:41:28Z"
   },
   "topRepo": {
-    "name": "SparkLM",
+    "name": "Suhasvision",
     "stars": 1,
-    "url": "https://github.com/Kurapati-Sai-Suhas/SparkLM"
+    "url": "https://github.com/Kurapati-Sai-Suhas/Suhasvision"
   }
 }
