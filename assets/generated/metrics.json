@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-05T03:33:47.909Z",
+  "fetchedAt": "2026-08-05T09:06:52.259Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
-    "name": "Kurapati-Sai-Suhas",
-    "bio": "AI/ML Engineer & Backend Developer | LLMs, RAG, Computer Vision in Production (NVIDIA NIM) | Django REST + Python | NVIDIA-Certified: Generative AI & LLMs",
+    "name": " Sai ",
+    "bio": "AI/ML Engineer & Backend Developer | LLMs, RAG, Computer Vision\r\n | Django REST + Python | NVIDIA-Certified: Generative AI & LLMs",
     "avatar": "https://avatars.githubusercontent.com/u/192898267?v=4",
-    "location": "",
+    "location": "Dayananda Sagar University - Harohalli - Bengaluru South -Karnataka",
     "company": "",
     "website": "",
     "createdAt": "2024-12-26T15:44:33Z",
@@ -364,7 +364,7 @@
           "wickets": 7,
           "overs": 140,
           "stars": 3,
-          "lastUsed": "2026-08-04T19:57:38Z",
+          "lastUsed": "2026-08-05T03:33:49Z",
           "pace": 160
         },
         {
@@ -577,7 +577,7 @@
         "crdt"
       ],
       "pushedAt": "2026-08-04T18:14:11Z",
-      "daysSincePush": 0,
+      "daysSincePush": 1,
       "releases": 0,
       "archived": false
     },
@@ -638,7 +638,7 @@
       "languageColor": null,
       "topics": [],
       "pushedAt": "2026-07-06T16:07:50Z",
-      "daysSincePush": 29,
+      "daysSincePush": 30,
       "releases": 0,
       "archived": false
     }
@@ -2721,7 +2721,7 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-08-04T19:57:38Z",
+    "lastPush": "2026-08-05T03:33:49Z",
     "lastEventType": "CreateEvent",
     "lastEventRepo": "Kurapati-Sai-Suhas/SparkLM",
     "lastEventAt": "2026-08-04T18:11:47Z"
