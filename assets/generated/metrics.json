@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-14T07:51:29.905Z",
+  "fetchedAt": "2026-08-14T13:44:35.906Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -11,7 +11,7 @@
     "website": "",
     "createdAt": "2024-12-26T15:44:33Z",
     "followers": 7,
-    "following": 19,
+    "following": 22,
     "starsGiven": 5,
     "publicRepos": 9,
     "gists": 0
@@ -34,13 +34,13 @@
     "highest": 21,
     "highestOn": "2026-07-26",
     "average": 4.6,
-    "strikeRate": 40.1,
+    "strikeRate": 40,
     "centuries": 1,
     "fifties": 1,
     "fours": 19,
     "sixes": 0,
     "debut": "2024-12-26",
-    "daysSinceDebut": 596,
+    "daysSinceDebut": 597,
     "consistency": 8.7
   },
   "bowling": {
@@ -364,7 +364,7 @@
           "wickets": 7,
           "overs": 177,
           "stars": 3,
-          "lastUsed": "2026-08-14T02:47:05Z",
+          "lastUsed": "2026-08-14T07:51:31Z",
           "pace": 160
         },
         {
@@ -2727,7 +2727,7 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-08-14T02:47:05Z",
+    "lastPush": "2026-08-14T07:51:31Z",
     "lastEventType": "PushEvent",
     "lastEventRepo": "Kurapati-Sai-Suhas/SparkLM",
     "lastEventAt": "2026-08-11T19:08:01Z"
