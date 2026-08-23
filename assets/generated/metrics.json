@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T07:01:50.421Z",
+  "fetchedAt": "2026-08-23T13:02:55.466Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -34,14 +34,14 @@
     "highest": 21,
     "highestOn": "2026-07-26",
     "average": 4.57,
-    "strikeRate": 40,
+    "strikeRate": 39.9,
     "centuries": 1,
     "fifties": 1,
     "fours": 19,
     "sixes": 0,
     "debut": "2024-12-26",
-    "daysSinceDebut": 605,
-    "consistency": 8.8
+    "daysSinceDebut": 606,
+    "consistency": 8.7
   },
   "bowling": {
     "overs": 0,
@@ -364,7 +364,7 @@
           "wickets": 7,
           "overs": 180,
           "stars": 3,
-          "lastUsed": "2026-08-23T02:00:08Z",
+          "lastUsed": "2026-08-23T07:01:51Z",
           "pace": 160
         },
         {
@@ -577,7 +577,7 @@
         "crdt"
       ],
       "pushedAt": "2026-08-11T19:08:01Z",
-      "daysSincePush": 11,
+      "daysSincePush": 12,
       "releases": 0,
       "archived": false
     },
@@ -2727,7 +2727,7 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-08-23T02:00:08Z",
+    "lastPush": "2026-08-23T07:01:51Z",
     "lastEventType": "PushEvent",
     "lastEventRepo": "Kurapati-Sai-Suhas/GxP-Training-Bot",
     "lastEventAt": "2026-08-14T17:46:34Z"
