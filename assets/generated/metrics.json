@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T20:22:10.742Z",
+  "fetchedAt": "2026-09-06T04:41:22.596Z",
   "transport": "public-rest",
   "profile": {
     "login": "Kurapati-Sai-Suhas",
@@ -19,7 +19,7 @@
   "totals": {
     "contributions": 309,
     "thisYear": 304,
-    "stars": 5,
+    "stars": 6,
     "forks": 1,
     "repos": 9,
     "activeDays": 64,
@@ -273,7 +273,7 @@
           "name": "LLM / RAG",
           "wickets": 2,
           "overs": 218,
-          "stars": 3,
+          "stars": 4,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 160
         },
@@ -281,7 +281,7 @@
           "name": "Groq/Gemini",
           "wickets": 1,
           "overs": 207,
-          "stars": 2,
+          "stars": 3,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 159
         },
@@ -318,7 +318,7 @@
           "name": "OpenCV",
           "wickets": 2,
           "overs": 214,
-          "stars": 3,
+          "stars": 4,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 160
         },
@@ -363,15 +363,15 @@
           "name": "React/Node",
           "wickets": 7,
           "overs": 245,
-          "stars": 4,
-          "lastUsed": "2026-09-05T14:25:15Z",
+          "stars": 5,
+          "lastUsed": "2026-09-05T20:22:11Z",
           "pace": 160
         },
         {
           "name": "Python",
           "wickets": 6,
           "overs": 228,
-          "stars": 5,
+          "stars": 6,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 159
         },
@@ -379,7 +379,7 @@
           "name": "Django REST",
           "wickets": 3,
           "overs": 225,
-          "stars": 4,
+          "stars": 5,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 158
         },
@@ -387,7 +387,7 @@
           "name": "PostgreSQL",
           "wickets": 1,
           "overs": 207,
-          "stars": 2,
+          "stars": 3,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 157
         },
@@ -408,7 +408,7 @@
           "name": "CI / Tests",
           "wickets": 1,
           "overs": 207,
-          "stars": 2,
+          "stars": 3,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 160
         },
@@ -416,7 +416,7 @@
           "name": "Sandboxing",
           "wickets": 1,
           "overs": 207,
-          "stars": 2,
+          "stars": 3,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 160
         },
@@ -424,7 +424,7 @@
           "name": "Linux",
           "wickets": 1,
           "overs": 207,
-          "stars": 2,
+          "stars": 3,
           "lastUsed": "2026-09-05T14:25:15Z",
           "pace": 160
         },
@@ -564,9 +564,9 @@
       "description": "Adaptive coding-practice platform (Django/DRF/Channels, PostgreSQL/pgvector) with Elo skill modeling, a prerequisite curriculum DAG, spaced-repetition scheduling, a hybrid ML routing engine (RandomForest + runs-test), and sandboxed Judge0 execution; 104-test suite. Groq/Gemini power separate content-generation and coaching features, not routing.",
       "url": "https://github.com/Kurapati-Sai-Suhas/SparkLM",
       "homepage": "https://spark-lm-3y3e.vercel.app",
-      "stars": 2,
+      "stars": 3,
       "forks": 1,
-      "watchers": 2,
+      "watchers": 3,
       "commits": 207,
       "language": "Python",
       "languageColor": null,
@@ -577,7 +577,7 @@
         "crdt"
       ],
       "pushedAt": "2026-09-05T14:25:15Z",
-      "daysSincePush": 0,
+      "daysSincePush": 1,
       "releases": 0,
       "archived": false
     },
@@ -638,7 +638,7 @@
       "languageColor": null,
       "topics": [],
       "pushedAt": "2026-07-06T16:07:50Z",
-      "daysSincePush": 61,
+      "daysSincePush": 62,
       "releases": 0,
       "archived": false
     }
@@ -683,7 +683,7 @@
     },
     {
       "title": "TOP KNOCK: SparkLM",
-      "issuer": "2 STARS",
+      "issuer": "3 STARS",
       "year": "",
       "kind": "live"
     }
@@ -2727,14 +2727,14 @@
     ]
   },
   "activity": {
-    "lastPush": "2026-09-05T14:25:15Z",
+    "lastPush": "2026-09-05T20:22:11Z",
     "lastEventType": "PushEvent",
     "lastEventRepo": "Kurapati-Sai-Suhas/SparkLM",
-    "lastEventAt": "2026-09-03T12:54:26Z"
+    "lastEventAt": "2026-09-05T14:25:16Z"
   },
   "topRepo": {
     "name": "SparkLM",
-    "stars": 2,
+    "stars": 3,
     "url": "https://github.com/Kurapati-Sai-Suhas/SparkLM"
   }
 }
